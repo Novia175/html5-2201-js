@@ -1,0 +1,1079 @@
+ @charset "utf-8";
+ /* CSS Document */
+ 
+ * {
+     margin: 0px;
+     padding: 0px;
+     font-size: 12px;
+ }
+ 
+ li {
+     list-style: none;
+ }
+ 
+ a {
+     text-decoration: none;
+ }
+ /*导航*/
+ 
+ #subNav {
+     border: 0px solid rgb(255, 0, 0);
+     width: 100%;
+     height: 30px;
+     background: #e3e4e5;
+ }
+ 
+ #subNav #subNavCon {
+     border: 0px solid rgb(255, 0, 0);
+     width: 1190px;
+     height: 30px;
+     margin: 0px auto;
+ }
+ 
+ #subNav #subNavCon #subNavConLeft {
+     border: 0px solid rgb(255, 0, 0);
+     width: 80px;
+     float: left;
+     text-align: center;
+     line-height: 30px;
+     color: #999999;
+ }
+ 
+ #subNav #subNavCon #subNavConRight {
+     border: 0px solid rgb(255, 0, 0);
+     float: right;
+ }
+ 
+ #subNavConRight ul {
+     list-style: none;
+ }
+ 
+ #subNavConRight ul li {
+     line-height: 30px;
+     float: left;
+     text-align: center;
+ }
+ 
+ #sncTxt {
+     color: #e1251b;
+     text-decoration: none;
+ }
+ 
+ #sncTxtOne1 {
+     width: 170px;
+     color: #999999;
+ }
+ 
+ #sncTxtOne2 {
+     color: #666;
+     margin-right: 30px;
+ }
+ 
+ .sncTxtImg img {
+     /*图片转换为块元素*/
+     display: block;
+ }
+ 
+ .sncTxtImg {
+     width: 1px;
+     line-height: 30px;
+     margin-top: 8px;
+ }
+ 
+ .sncTxtfTxt {
+     width: 90px;
+     color: #999999;
+ }
+ 
+ .w {
+     height: 140px;
+     width: 1190px;
+     margin: 0 auto;
+     position: relative;
+     border-bottom: 1px solid #dddddd;
+ }
+ 
+ #logo {
+     z-index: 2;
+     left: 0;
+     top: 10px;
+     width: 190px;
+     height: 120px;
+     position: absolute;
+     overflow: hidden;
+ }
+ 
+ .search {
+     position: relative;
+     width: 100%;
+     height: 90px;
+     z-index: 1;
+ }
+ 
+ .logoSea {
+     position: absolute;
+     left: 260px;
+     top: 25px;
+     width: 546px;
+     height: 32px;
+     border: 2px solid #e2231a;
+     background: #fff;
+ }
+ 
+ .logoSea>input {
+     position: absolute;
+     left: 0;
+     padding: 2px 44px 2px 17px;
+     width: 425px;
+     height: 26px;
+     border: none;
+     line-height: 26px;
+     color: #333333;
+ }
+ 
+ .logoSea ul {
+     width: 546px;
+     overflow: hidden;
+     position: absolute;
+     top: 34px;
+     left: 0;
+     border: 1px solid #CCC;
+     background: #fff;
+     z-index: 99;
+     border-top: 0px;
+ }
+ 
+ .logoSea .close {
+     border-top: 1px solid #CCC;
+     text-align: right;
+     color: #999999;
+ }
+ 
+ .logoSea li {
+     overflow: hidden;
+     padding: 1px 6px;
+     line-height: 24px;
+     cursor: pointer;
+ }
+ 
+ .logoSea>input:focus {
+     outline: none;
+ }
+ 
+ .logoSea>span {
+     position: absolute;
+     right: 70px;
+     top: 5px;
+     overflow: hidden;
+     color: #999999;
+ }
+ 
+ .logoSea>button {
+     position: absolute;
+     border-radius: 0;
+     right: 0;
+     width: 58px;
+     height: 32px;
+     line-height: 32px;
+     border: none;
+     background-color: #e1251b;
+     font-size: 20px;
+     font-weight: 700;
+     color: #fff;
+     -webkit-transition: background .2s ease;
+     transition: background .2s ease;
+ }
+ 
+ #logoSeaInput {
+     position: absolute;
+     left: 0;
+     padding: 2px 44px 2px 17px;
+     width: 425px;
+     height: 26px;
+     border: 1px solid transparent;
+     line-height: 26px;
+     font-size: 12px;
+ }
+ 
+ #logoSeaTxt {
+     overflow: hidden;
+     position: absolute;
+     left: 260px;
+     top: 65px;
+     width: 550px;
+     height: 20px;
+     line-height: 20px;
+ }
+ 
+ #logoSeaTxt a {
+     float: left;
+     margin-right: 10px;
+     white-space: nowrap;
+     color: #999;
+ }
+ 
+ #logoCarCon {
+     position: absolute;
+     right: 230px;
+     top: 25px;
+     border: 1px solid rgb(204, 204, 204);
+     width: 130px;
+     height: 34px;
+     background-color: #fff;
+     text-align: center;
+     line-height: 34px;
+     border-color: #eee;
+ }
+ 
+ #logoCarConImg {
+     float: left;
+     color: #e1251b;
+     font-size: 18px;
+     margin-left: 5px;
+ }
+ 
+ #logoCarConTxt {
+     height: 17px;
+     font-size: 14px;
+     color: rgb(153, 153, 153);
+     float: left;
+     margin-left: 20px;
+ }
+ 
+ #logoCarConCount {
+     width: 15px;
+     height: 17px;
+     position: absolute;
+     left: 20px;
+     top: -1px;
+     background-color: #f00;
+     border-radius: 50%;
+     font-size: 12px;
+     color: #fff;
+     padding: 0;
+     line-height: 16px;
+ }
+ 
+ #mainNavCenMid {
+     overflow: hidden;
+     position: absolute;
+     left: 203px;
+     bottom: 0;
+     height: 40px;
+     padding-top: 20px;
+     width: 760px;
+ }
+ 
+ #mainNavCenMid ul {
+     list-style: none;
+ }
+ 
+ #mainNavCenMid ul:first-child {
+     font-weight: 700;
+     color: #e1251b;
+ }
+ 
+ #mainNavCenMid ul li {
+     float: left;
+     font-size: 15px;
+     margin: 0 11px;
+ }
+ /* 主体 */
+ 
+ .contmain {
+     background-color: #f4f4f4;
+     width: 100%;
+ }
+ 
+ #mainOne {
+     width: 1190px;
+     margin: 0px auto;
+     height: 470px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     padding-top: 10px;
+ }
+ 
+ #mainOneLeft {
+     width: 190px;
+     background-color: #fff;
+     font-size: 14px;
+     height: 470px;
+     padding-top: 10px;
+     box-sizing: border-box;
+ }
+ 
+ .mainOneLeftTxt {
+     color: #333333;
+     font-size: 14px;
+     height: 25px;
+     line-height: 25px;
+     padding-left: 10px;
+ }
+ 
+ #mainOneCen {
+     width: 780px;
+     height: 470px;
+     display: grid;
+     grid-template-columns: 590px 1fr;
+     grid-template-rows: 1fr 1fr 1fr;
+     grid-gap: 10px 10px;
+     grid-template-areas: 'a1 a2 ' 'a1 a3' 'a1 a4';
+ }
+ /* 轮播 */
+ 
+ li {
+     list-style: none;
+ }
+ 
+ #div1 {
+     overflow: hidden;
+     position: relative;
+ }
+ 
+ #div1 ul li {
+     opacity: 0;
+     position: absolute;
+     left: 0;
+     top: 0;
+     z-index: 0;
+     transition: opacity 1.5s;
+ }
+ 
+ #div1 ul li.ac {
+     z-index: 5;
+     opacity: 1;
+ }
+ 
+ #div1 ol {
+     position: absolute;
+     right: calc(50% - 62px);
+     bottom: 10px;
+     z-index: 6
+ }
+ 
+ #div1 ol li {
+     width: 20px;
+     height: 20px;
+     background: rgba(255, 255, 255, 0.6);
+     margin-left: 5px;
+     float: left;
+     line-height: 20px;
+     text-align: center;
+     cursor: pointer;
+     border-radius: 50%;
+     color: rgba(0, 0, 0, 0.6);
+ }
+ 
+ #div1 ol li.ac {
+     background: rgba(255, 0, 0, 0.4);
+     color: #fff;
+ }
+ 
+ #div1>a {
+     text-decoration: none;
+     position: absolute;
+     top: 50%;
+     margin-top: -10px;
+     height: 40px;
+     line-height: 40px;
+     width: 30px;
+     color: #fff;
+     background: rgba(33, 33, 33, 0.5);
+     z-index: 6;
+     box-sizing: border-box;
+ }
+ 
+ #div1>a span {
+     font-size: 14px;
+     font-weight: bold;
+ }
+ 
+ #goPrev {
+     left: 0;
+ }
+ 
+ #goNext {
+     right: 0;
+ }
+ 
+ #mainOneRight {
+     width: 190px;
+     background-color: #fff;
+     box-sizing: border-box;
+     height: 470px;
+ }
+ /* 用户 */
+ 
+ .user {
+     height: 100px;
+     border-bottom: 1px solid rgb(201, 204, 205);
+     box-sizing: border-box;
+ }
+ 
+ .user_inner {
+     height: 67px;
+     padding-top: 15px;
+     position: relative;
+ }
+ 
+ .user_avatar {
+     position: absolute;
+     left: 20px;
+     top: 26px;
+     width: 44px;
+     height: 44px px;
+ }
+ 
+ .user_avatar img {
+     border: 0;
+     width: 40px;
+     height: 40px;
+     border: 2px solid #fff;
+     border-radius: 50%;
+ }
+ 
+ .user_show1,
+ .user_show2 {
+     position: absolute;
+     top: 29px;
+     left: 74px;
+     right: 10px;
+ }
+ 
+ #morTxt {
+     border-bottom: 1px solid rgb(201, 204, 205);
+     height: 30px;
+     box-sizing: border-box;
+ }
+ 
+ .morTxtLeft {
+     border: 0px solid rgb(255, 0, 0);
+     font-size: 14px;
+     color: rgb(0, 0, 0);
+     float: left;
+     font-weight: 700;
+     margin-top: 10px;
+     margin-left: 15px;
+ }
+ 
+ #morTxtRight {
+     border: 0px solid rgb(255, 0, 0);
+     color: rgb(0, 0, 0);
+     float: right;
+     margin-top: 12px;
+     margin-right: 15px;
+ }
+ 
+ #morTxtDv {
+     border-bottom: 1px dashed rgb(201, 204, 205);
+     height: 88px;
+     box-sizing: border-box;
+ }
+ 
+ .mortdTxt {
+     margin: 0px 15px;
+     /* border: 1px solid rgb(255, 0, 0); */
+     color: #666666;
+     height: 17px;
+     overflow: hidden;
+ }
+ 
+ #morTxtSerDv {
+     border-top: 1px dashed rgb(201, 204, 205);
+     height: 230px;
+     box-sizing: border-box;
+ }
+ 
+ #moortsdOne {
+     width: 33.3%;
+     height: 65px;
+     float: left;
+     display: flex;
+     flex-wrap: wrap-reverse;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .flag02 img {
+     width: 28px;
+     height: 28px;
+ }
+ 
+ .flag02Txt {
+     border: 0px solid rgb(255, 0, 0);
+     color: rgb(153, 153, 153);
+     text-align: center;
+     height: 27px;
+     line-height: 27px;
+ }
+ /*  */
+ 
+ .contadvs {
+     padding-top: 30px;
+     background-color: #f4f4f4;
+     width: 100%;
+ }
+ 
+ #advs {
+     width: 1190px;
+     height: 260px;
+     background-color: #fff;
+     margin: 0 auto;
+ }
+ 
+ #advs2 {
+     float: left;
+     width: 200px;
+     height: 260px;
+ }
+ 
+ #advs3 {
+     float: left;
+     width: 180px;
+     height: 240px;
+     margin: 10px;
+ }
+ 
+ .contlove {
+     padding-top: 20px;
+     background-color: #f4f4f4;
+     width: 100%;
+ }
+ 
+ #loves {
+     background-color: #fff;
+     width: 1190px;
+     height: 314px;
+     margin: 0 auto;
+ }
+ 
+ #loves1 {
+     border: 0px solid rgb(0, 255, 0);
+     height: 40px;
+ }
+ 
+ #lovesTxt {
+     border: 0px solid rgb(255, 0, 0);
+     font-size: 28px;
+     line-height: 40px;
+     width: 120px;
+     float: left;
+ }
+ 
+ #lovesImg {
+     border: 0px solid rgb(255, 0, 0);
+     width: 238px;
+     height: 30px;
+     float: left;
+     margin-top: 10px;
+ }
+ 
+ #lovesImg1 {
+     border: 0px solid rgb(255, 0, 0);
+     width: 23px;
+     height: 33px;
+     float: right;
+     margin-top: 4px;
+     margin-right: 5px;
+ }
+ 
+ #lovesTxt1 {
+     border: 0px solid rgb(255, 0, 0);
+     font-size: 16px;
+     line-height: 40px;
+     width: 55px;
+     float: right;
+ }
+ 
+ #loveK {
+     border: 0px solid rgb(204, 204, 204);
+     height: 270px;
+     display: flex;
+     /* flex-wrap: wrap; */
+ }
+ 
+ .loveKone {
+     border: 0px solid rgb(255, 0, 0);
+     height: 270px;
+     width: 237px;
+     float: left;
+ }
+ 
+ .loveKoneImg {
+     border: 0px solid rgb(255, 0, 0);
+     width: 200px;
+     height: 180px;
+     margin: auto;
+ }
+ 
+ .loveKoneM {
+     border: 0px solid rgb(255, 0, 0);
+     font-size: 18px;
+     line-height: 30px;
+     width: 90px;
+     margin-left: 39px;
+ }
+ 
+ .loveKoneLine {
+     height: 70px;
+     width: 1px;
+     background-color: rgb(204, 204, 204);
+     float: left;
+     margin-top: 180px;
+ }
+ 
+ #jdStyle {
+     border: 0px solid rgb(255, 0, 0);
+     width: 1190px;
+     margin: 0 auto;
+     background-color: #fff;
+ }
+ 
+ .contstyle {
+     padding-top: 20px;
+     background-color: #f4f4f4;
+     width: 100%;
+ }
+ 
+ #jdStyleText {
+     border: 0px solid rgb(255, 0, 0);
+     font-size: 30px;
+     height: 52px;
+     width: 150px;
+     line-height: 52px;
+ }
+ 
+ #sOne {
+     border-bottom: 1px solid rgb(204, 204, 204);
+     height: 250px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     margin-bottom: 10px;
+     border-top: 1px solid rgb(204, 204, 204);
+ }
+ 
+ .sOneCon1 {
+     width: 190px;
+     height: 250px;
+ }
+ 
+ .sOneCon2 {
+     width: 380px;
+     height: 250px;
+ }
+ 
+ #sOneCon12 {
+     width: 188px;
+     height: 248px;
+ }
+ 
+ #sTwo {
+     border-top: 1px solid rgb(204, 204, 204);
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+ 
+ #sOneCon3 {
+     width: 380px;
+     height: 250px;
+ }
+ 
+ #soc3Img {
+     border: 0px solid rgb(255, 0, 0);
+     width: 280px;
+     height: 70px;
+     margin: auto;
+     margin-top: 10px;
+ }
+ 
+ #soc3 {
+     border: 0px solid rgb(0, 255, 0);
+     width: 350px;
+     height: 160px;
+     margin: auto;
+ }
+ 
+ #soc3Img1 {
+     border: 0px solid rgb(0, 0, 255);
+     width: 110px;
+     height: 130px;
+     margin-left: 15px;
+     margin-top: 4px;
+     float: left;
+ }
+ 
+ #soc3Line {
+     border: 0px dashed #CCCCCC;
+     width: 1px;
+     height: 140px;
+     background-color: rgb(204, 204, 204);
+     margin: auto;
+     float: left;
+     margin-left: 15px;
+     margin-top: 14px;
+ }
+ 
+ #soc3Txt {
+     border: 0px solid rgb(0, 0, 255);
+     height: 146px;
+     width: 180px;
+     margin-left: 15px;
+     margin-top: 6px;
+     float: left;
+ }
+ 
+ .soc3txt {
+     height: 30px;
+     line-height: 30px;
+ }
+ 
+ .contznsm {
+     padding-top: 20px;
+     background-color: #f4f4f4;
+     width: 100%;
+ }
+ 
+ #znsm {
+     width: 1190px;
+     margin: 0 auto;
+     margin-top: 5px;
+     background-color: #fff;
+     padding-bottom: 13px;
+ }
+ 
+ #head {
+     border-bottom: 1px solid rgb(204, 204, 204);
+     height: 40px;
+ }
+ 
+ #head1 {
+     border: 0px solid rgb(153, 153, 153);
+     font-size: 22px;
+     width: 90px;
+     height: 40px;
+     line-height: 40px;
+     text-align: left;
+     float: left;
+ }
+ 
+ #head2 {
+     border: 0px solid rgb(255, 0, 0);
+     width: 820px;
+     height: 30px;
+     margin-top: 10px;
+     float: right;
+ }
+ 
+ #head2 ul {
+     list-style: none;
+ }
+ 
+ #head2 ul li {
+     border: 0px solid rgb(255, 0, 0);
+     font-size: 14px;
+     color: rgb(102, 102, 102);
+     line-height: 30px;
+     float: left;
+     text-align: center;
+ }
+ 
+ .headTxt {
+     width: 90px;
+ }
+ 
+ .headImg {
+     width: 1px;
+     line-height: 30px;
+     margin-top: 8px;
+ }
+ 
+ .headImg img {
+     display: block;
+ }
+ 
+ #body {
+     width: 1190px;
+     height: 400px;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr 1fr;
+     grid-gap: 5px 5px;
+     grid-template-areas: 'a1 a2 a3 a4 a5 a6' 'a1 b1 b2 b3 b4 b5' 'c1 c2 c3 c4 c5 c6';
+     box-sizing: border-box;
+ }
+ /* bottom */
+ 
+ .cont {
+     height: 20px;
+     background-color: #f4f4f4;
+ }
+ 
+ #dkhs {
+     border-right: 0px solid rgb(153, 153, 153);
+     width: 100%;
+     background-color: #eaeaea;
+     display: flex;
+ }
+ 
+ #cont1 {
+     width: 100%;
+     background-color: #eaeaea;
+     border-top: 1px solid rgb(214, 213, 211);
+     border-bottom: 1px solid rgb(214, 213, 211);
+ }
+ 
+ #cont2 {
+     width: 100%;
+     margin: 0 auto;
+     background-color: #eaeaea;
+     margin-bottom: 20px;
+ }
+ 
+ #last1 {
+     width: 1190px;
+     height: 250px;
+     margin: auto;
+     background-color: #eaeaea;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+ 
+ .one {
+     border: 0px solid rgb(255, 0, 0);
+     height: 250px;
+     float: left;
+     width: 130px;
+ }
+ 
+ .one1 {
+     border: 0px solid rgb(255, 255, 0);
+     font-size: 18px;
+     font-family: 宋体;
+     font-weight: 700;
+     width: 100px;
+     height: 40px;
+     line-height: 40px;
+     margin-top: 10px;
+     margin-left: 10px;
+ }
+ 
+ .one2 {
+     border: 0px solid rgb(255, 0, 255);
+     font-size: 13px;
+     width: 130px;
+     height: 28px;
+     line-height: 28px;
+     margin-left: 10px;
+     text-align: left;
+ }
+ 
+ #two {
+     border: 0px solid rgb(0, 0, 255);
+     width: 300px;
+     height: 250px;
+     float: left;
+ }
+ 
+ #two1 {
+     border: 0px solid rgb(255, 0, 0);
+     width: 340px;
+     height: 40px;
+     font-size: 18px;
+     font-family: 宋体;
+     font-weight: 700;
+     line-height: 40px;
+     margin-top: 10px;
+     text-align: center;
+ }
+ 
+ #two2 {
+     border: 0px solid rgb(255, 0, 0);
+     font-size: 13px;
+     width: 190px;
+     height: 60px;
+     line-height: 20px;
+     margin: auto;
+     text-align: left;
+ }
+ 
+ #two3 {
+     border: 0px solid rgb(255, 0, 0);
+     width: 65px;
+     height: 20px;
+     margin-left: 210px;
+     margin-top: 5px;
+     font-size: 12px;
+ }
+ 
+ #last2 {
+     width: 100%;
+     height: 250px;
+     background-color: #eaeaea;
+ }
+ 
+ #last21 {
+     border: 0px solid rgb(255, 0, 0);
+     width: 1054px;
+     height: 35px;
+     margin: 0 auto;
+     margin-bottom: 5px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+ 
+ #last21 ul {
+     list-style: none;
+     height: 35px;
+ }
+ 
+ .style1 {
+     border: 0px solid rgb(255, 0, 0);
+     font-family: 仿体;
+     font-size: 13px;
+     color: rgb(102, 102, 102);
+     line-height: 35px;
+     font-weight: 600;
+     float: left;
+     text-align: center;
+     margin-top: 5px;
+ }
+ 
+ .style2 {
+     border: 0px solid rgb(255, 0, 0);
+     width: 20px;
+     height: 30px;
+     font-weight: 600;
+     float: left;
+     color: rgb(180, 180, 180);
+     text-align: center;
+     margin-top: 14px;
+ }
+ 
+ #last22 {
+     border: 0px solid rgb(255, 0, 0);
+     width: 848px;
+     height: 22px;
+     margin: auto;
+ }
+ 
+ #last22 ul {
+     list-style: none;
+ }
+ 
+ .style3 {
+     border: 0px solid rgb(255, 0, 0);
+     font-family: 仿体;
+     font-size: 13px;
+     color: rgb(102, 102, 102);
+     line-height: 22px;
+     float: left;
+     text-align: center;
+ }
+ 
+ .style4 {
+     border: 0px solid rgb(255, 0, 0);
+     width: 20px;
+     height: 22px;
+     font-weight: 600;
+     float: left;
+     color: #eaeaea;
+     text-align: center;
+     margin-top: 3px;
+ }
+ 
+ #last23 {
+     border: 0px solid rgb(255, 0, 0);
+     width: 923px;
+     height: 28px;
+     margin: auto;
+ }
+ 
+ #last23 ul {
+     list-style: none;
+ }
+ 
+ #last24 {
+     border: 0px solid rgb(255, 0, 0);
+     width: 537px;
+     height: 28px;
+     margin: auto;
+ }
+ 
+ #last24 ul {
+     list-style: none;
+ }
+ 
+ #last25 {
+     border: 0px solid rgb(255, 0, 0);
+     width: 206px;
+     height: 28px;
+     margin: auto;
+ }
+ 
+ #last25 ul {
+     list-style: none;
+ }
+ 
+ #lastImg {
+     border: 0px solid rgb(255, 0, 0);
+     width: 810px;
+     height: 40px;
+     margin: auto;
+     margin-top: 12px;
+ }
+ /* 秒杀 */
+ 
+ #advs1 {
+     color: #fff;
+     width: 190px;
+     height: 260px;
+     float: left;
+     background: url("../images/img-index/miaosha.png");
+ }
+ 
+ .counttitle {
+     text-align: center;
+     font-size: 30px;
+     margin-top: 30px;
+     font-weight: 700;
+     color: #fff;
+ }
+ 
+ .countdesc strong {
+     font-size: 18px;
+     margin-right: 2px;
+     margin-top: -2px;
+ }
+ 
+ .countdesc {
+     margin-top: 90px;
+     font-size: 14px;
+     text-align: center;
+ }
+ 
+ .countmain {
+     width: 132px;
+     height: 30px;
+     margin: 10px auto;
+     display: block;
+     font-weight: 700;
+     padding-top: 5px;
+ }
+ 
+ .countmain span {
+     font-size: 20px;
+     margin-left: 2px;
+     margin-right: 2px;
+ }
+ 
+ .countmain span:nth-child(2n+1) {
+     background-color: #000;
+     padding: 2px;
+ }

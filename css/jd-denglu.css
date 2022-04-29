@@ -1,0 +1,302 @@
+/*清除浏览器默认样式*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+    color: #666;
+}
+
+.header {
+    width: 100%;
+    height: 85px;
+}
+
+.w {
+    width: 990px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 300px;
+    height: 60px;
+    float: left;
+    margin: 12.5px auto;
+}
+
+.logo1 {
+    width: 170px;
+    height: 60px;
+    float: left;
+    background-image: url(../images/img-denglu/logo1.png);
+}
+
+.logo2 {
+    width: 110px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+    background-image: url(../images/img-denglu/logo2.png);
+}
+
+.box2 {
+    width: 170px;
+    height: 18px;
+    float: right;
+    margin-bottom: 12.5px;
+    margin-top: 51.5px;
+}
+
+.box2 a {
+    margin-top: 2px;
+    color: #999;
+}
+
+.q-icon {
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    margin-left: 4px;
+    margin-right: 4px;
+    background-image: url(../images/img-denglu/q-icon.png);
+    background-repeat: no-repeat;
+    float: right;
+}
+
+.content-title {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(255, 248, 240);
+    margin: 0 auto;
+}
+
+.box1 {
+    width: 1049px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 9px;
+    margin-right: 4px;
+}
+
+.titles {
+    height: 18px;
+    padding-top: 14px;
+    text-align: center;
+    float: left;
+}
+
+.titles p {
+    color: #999;
+}
+
+.content {
+    width: 100%;
+    height: 475px;
+    background: #e9fbff;
+}
+
+.c {
+    width: 990px;
+    height: 475px;
+    margin: 0 auto;
+    background-image: url(../images/img-denglu/bg.jpg);
+    background-repeat: no-repeat;
+}
+
+.box {
+    width: 346px;
+    height: 427px;
+    background-color: white;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.tishi {
+    width: 100%;
+    height: 42px;
+    background-color: rgb(255, 248, 240);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tishis {
+    height: 21px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.tishis p {
+    color: #999;
+}
+
+.icons {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 12.5px;
+    margin-top: 14.5px;
+    background-image: url(../images/img-denglu/icon-tips.png);
+}
+
+.main {
+    width: 100%;
+    height: 58px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+
+/* 失败提示信息 */
+
+.msg-wrap {
+    min-height: 23px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: auto!important;
+    visibility: hidden;
+    /* visibility: visible; */
+}
+
+.msg-error {
+    position: relative;
+    background: #ffebeb;
+    color: #e4393c;
+    border: 1px solid #faccc6;
+    padding: 3px 10px 3px 40px;
+    line-height: 15px;
+    height: auto;
+}
+
+.main-a1,
+.main-a2 {
+    height: 55px;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#ma1,
+#ma2 {
+    width: 100%;
+    height: 215px;
+    text-align: center;
+    padding-bottom: 28px;
+}
+
+#ma2 {
+    display: block;
+}
+
+#ma1 {
+    padding-top: 30px;
+    display: none;
+}
+
+#ma2 a {
+    float: right;
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+
+.inputer-top {
+    width: 304px;
+    height: 38px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.lefter {
+    width: 37px;
+    height: 36px;
+    background-image: url(../images/img-denglu/pew.png);
+    border: 1px solid #bdbdbd;
+    border-right: none;
+    display: inline-block;
+}
+
+.caidan {
+    width: 264px;
+    height: 36px;
+    float: right;
+    border: 1px solid #bdbdbd;
+    border-collapse: collapse;
+}
+
+.lf {
+    width: 37px;
+    height: 36px;
+    background-image: url(../images/img-denglu/pew.png);
+    background-position: -48px 0;
+    border: 1px solid #bdbdbd;
+    border-right: none;
+    display: inline-block;
+}
+
+#btn {
+    width: 304px;
+    height: 33px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #e4393c;
+    border: 1px solid #e85356;
+    font-family: 'Microsoft YaHei';
+    /* margin-top: 24px; */
+}
+
+.root {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(252, 252, 252);
+    border-top: 1px solid #f4f4f4;
+}
+
+.box3 {
+    height: 100%;
+    width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.root-link {
+    float: left;
+    margin-top: 15.5px;
+    margin-bottom: 15.5px;
+    height: 19px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* .root-link a {
+    height: 19px;
+} */
+
+.footer {
+    width: 100%;
+    height: 108px;
+    margin-top: 24px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
