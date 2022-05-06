@@ -34,50 +34,48 @@
  new Change;
 
  //输入账户密码
- let btn = document.querySelector('#btn'),
-     form = document.forms[0];
- console.log(btn, form);
- btn.addEventListener('click', () => {
-     // console.log(form);
-     let username = form.elements.user.value,
-         password = form.elements.password.value;
-
-     if (!username.trim() || !password.trim()) { //trim去空格
-         throw new Error('用户名或密码不为空');
+ class Login {
+     constructor() {
+         this.$('#btn').addEventListener('click', this.clickFn.bind(this));
      }
-     if (!isNaN(parseInt(username))) { // isNaN为真表示非数字开头
-         throw new Error('用户名不能以数字开头');
-     }
-     if (password.length < 6 || password.length > 20) {
-         throw new Error('密码长度不符合要求,长度必须在6~20之间');
-     }
-
-     let data = `username=${username}&password=${password}`;
-     ajax(data);
-     //  console.log(data);
- })
-
- function ajax(data) {
-     let xhr = new XMLHttpRequest();
-     xhr.open('post', 'http://localhost:8888/users/login');
-     xhr.setRequestHeader('content-type', 'application/x-www-form-urlencoded');
-     xhr.send(data);
-     console.log(data);
-     xhr.onload = function() {
-         // console.log(xhr.response);
-         let res = JSON.parse(xhr.response);
-         console.log(res, res.code, res.user.nickname);
+     clickFn() {
+         let forms = document.forms[0].elements;
+         let username = forms.user.value,
+             password = forms.password.value;
          let er = document.querySelector('.msg-wrap');
-         setTimeout(() => {
-             if (res.code == 0) { //账号或密码有误
-                 er.style.visibility = 'visible';
-                 return;
-             }
-             if (res.code == 1) { //登录成功
-                 er.style.visibility = 'hidden';
-                 window.location.href = "../html/jd-index.html?nickname=" + res.user.nickname;
-             }
+         if (!username.trim() || !password.trim()) { //trim去空格
+             throw new Error('用户名或密码不为空');
+         }
+         axios.defaults.headers['content-type'] = 'application/x-www-form-urlencoded';
+         let data = `username=${username}&password=${password}`;
+         axios.post('http://localhost:8888/users/login', data).then(res => {
+             let { status, data } = res;
+             console.log(data);
 
-         }, 500);
+             if (status == 200) { //请求成功
+                 //登录成功
+                 if (data.code == 0) { //账号或密码有误
+                     er.style.visibility = 'visible';
+                     return;
+                 }
+                 if (data.code == 1) { //登录成功
+                     er.style.visibility = 'hidden';
+                     console.log(data);
+                     localStorage.setItem('token', data.token);
+                     localStorage.setItem('user_id', data.user.id);
+                     localStorage.setItem('user_nikename', data.user.nickname);
+                     //  到哪里
+                     //  console.log(location.search.split('=')[1]);
+                     //  window.location.href
+                     location.assign(location.search.split('=')[1]);
+                 }
+             }
+         });
      }
+     $(tag) {
+         let res = document.querySelectorAll(tag);
+         return res.length == 1 ? res[0] : res;
+     }
+
  }
+ new Login;

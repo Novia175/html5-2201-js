@@ -26,9 +26,13 @@
                 </li>
             </ul>
             <ul class="fr nav">
-                <li>
-                    <a href="#">你好，请登录</a>
-                    <a href="#" class="f10">免费注册</a>
+                <li class="login1" style="font-size: 12px;color: #999;">你好，
+                    <a class="login" href="./jd-denglu.html?ReturnUrl=./jd-list.html">请登录</a>
+                    <a href="#none" class="f10">免费注册</a>
+                </li>
+                <li class="login2" style="display: none;">你好,
+                    <a href=" #none" class="uname" style="padding-right:10px;">admin</a>
+                    <a href="./jd-denglu.html?ReturnUrl=./jd-list.html" class="tuichu">退出</a>
                 </li>
                 <li class="space"></li>
                 <li>
@@ -207,7 +211,7 @@
             <div class="shopCar">
                 <i></i>
                 <a href="cart.html" class="f10">我的购物车</a>
-                <span>8</span>
+                <span class="cartNum">0</span>
             </div>
             <div class="hotwords">
                 <a href="#" class="f10">199减100</a>
@@ -252,8 +256,8 @@
     <div class="w sk_container">
         <div class="sk_bd">
             <ul>
-                <li class="sk_goods">
-                    <a href="detail.html"><img src="../images/img-list/mobile.jpg" alt=""></a>
+                <!-- <li class="sk_goods">
+                    <a href="#"><img src="../images/img-list/mobile.png" alt=""></a>
                     <h5 class="sk_goods_title">【超级爆款】华为 HUAWEI P30 Pro 超感光徕卡四摄10倍混合变焦麒麟980芯片屏</h5>
                     <p class="sk_goods_price"><em>¥4758.00</em> <del>￥5488</del></p>
                     <div class="sk_goods_progress">
@@ -264,25 +268,25 @@
                         剩余<em>29</em>件
                     </div>
                     <a href="detail.html" class="sk_goods_buy">立即抢购</a>
-                </li>
+                </li> -->
 
             </ul>
         </div>
         <div class="sk_page">
             <span class="page_num">
-                <a href="#" class="pn-prev">&lt;&lt; 上一页</a>
-                <a href="#">1</a>
-                <a href="#" class="current">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
+                <!-- <a href="#" class="pn-prev">&lt;&lt; 上一页</a>
+                <a href="#" class="current" data-id="1">1</a>
+                <a href="#" data-id="2">2</a>
+                <a href="#" data-id="3">3</a>
+                <a href="#" data-id="4">4</a>
+                <a href="#" data-id="5">5</a>
                 <a href="#" class="dotted">...</a>
-                <a href="#" class="pn-next">下一页&gt;&gt;</a>
+                <a href="#" class="pn-next">下一页&gt;&gt;</a> -->
             </span>
             <span class="page_skip">
-                共10页 到第
-                <input type="text"> 页
-                <button>确定</button>
+                共<span class="pageAll">10</span>页 到第
+            <input type="text" class="pageIn"> 页
+            <button class="pageSure">确定</button>
             </span>
         </div>
     </div>
@@ -478,7 +482,14 @@
             </p>
         </div>
     </footer>
+    <script src="../js/jquery-2.2.4.js"></script>
+    <script src="../js/axios/axios.min.js"></script>
+    <script src="../js/iflogin.js"></script>
+    <script src="../js/jd-list.js"></script>
+    <script src="../js/layer/layer.js"></script>
+
 
 </body>
+
 
 </html>

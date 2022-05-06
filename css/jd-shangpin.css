@@ -145,7 +145,7 @@
     .aab {
         width: 493px;
         height: 31px;
-        border: 2px solid #B61D1D;
+        border: 2px solid #f10215;
         color: #999999;
         font-size: 15px;
         padding-left: 5px;
@@ -158,9 +158,10 @@
         width: 50px;
         font-size: 12px;
         line-height: 35px;
-        background-color: #B61D1D;
+        background-color: #f10215;
         border-left: none;
         color: white;
+        border-bottom: 1px solid #f10215;
     }
     
     .aad {
@@ -425,12 +426,16 @@
     }
     
     .info_2_tittle {
-        height: 56px;
+        height: 40px;
         width: 100%;
         padding-top: 10px;
         margin-bottom: 5px;
         line-height: 28px;
         text-align: left;
+    }
+    
+    .info_2_tittle b {
+        font-size: 16px;
     }
     
     .info_2_news {
@@ -500,30 +505,14 @@
         color: #E4393C;
     }
     
-    .student-price {
+    .old-price {
         padding-top: 5px;
         line-height: normal;
         color: #666;
         font-size: 12px;
     }
     
-    .student-price em {
-        margin-right: 3px;
-        color: #0c8;
-        font-size: 16px;
-    }
-    
-    .student-price i {
-        display: inline-block;
-        *display: inline;
-        width: 43px;
-        height: 16px;
-        background: url(../images/img-shangpin/icon-student.png) left center no-repeat;
-    }
-    
-    .student-price em,
-    .student-price i,
-    .student-price span {
+    .old span {
         vertical-align: middle;
     }
     
@@ -552,6 +541,7 @@
     
     .miaoshaInfo3 {
         padding-bottom: 5px;
+        background-color: rgb(243, 243, 243);
     }
     
     .miaoshaInfo3_middle {
@@ -1244,6 +1234,7 @@
         padding-top: 10px;
         font-size: 12px;
         color: #999999;
+        /* float: right; */
     }
     
     .info_3_top {
@@ -1281,7 +1272,7 @@
     
     .watch_middle {
         width: 1210px;
-        height: 5473px;
+        /* height: 5473px; */
         margin: 0 auto;
         font-size: 12px;
         color: #999999;
@@ -1326,7 +1317,8 @@
     #qiJianDianInfo {
         float: left;
         width: 210px;
-        height: 1000px;
+        /* height: 1000px; */
+        margin-bottom: 20px;
     }
     
     #qiJianDian {
@@ -1435,7 +1427,7 @@
     #shangPinInfo {
         float: left;
         width: 990px;
-        height: 1000px;
+        /* height: 1000px; */
         margin-left: 10px;
     }
     
@@ -1450,24 +1442,26 @@
         border-bottom: 1px solid #e33333;
     }
     
-    .shangPinJieShao_top_1 {
+    .shangPinJieShao_top div {
         float: left;
-        width: 120px;
+        width: 20%;
         height: 100%;
-        background-color: #E33333;
-        color: #fff;
         line-height: 40px;
         text-align: center;
         font-size: 14px;
+        border-right: 1px solid #e3e3e3;
+        box-sizing: border-box;
+        /* color: #666; */
     }
     
-    .shangPinJieShao_top_2 {
-        float: left;
-        padding: 0 30px;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        font-size: 14px;
+    .shangPinJieShao_top div:last-child {
+        border-right: 0px;
+    }
+    
+    .changeOn,
+    .changeOnSure {
+        background-color: #E33333;
+        color: #fff;
     }
     
     .shangPinJieShao_top_gou {
@@ -1484,11 +1478,10 @@
     }
     
     .shangPinJieShao_main {
-        padding-left: 50px;
+        /* padding-left: 5px; */
         color: #333333;
     }
-    
-    .first_ul {
+    /* .first_ul {
         margin-top: 10px;
         width: 100%
     }
@@ -1508,7 +1501,7 @@
     
     #shangPinJieShao_img img:first-child {
         margin-top: 10px;
-    }
+    } */
     /* bottom */
     
     .cont {

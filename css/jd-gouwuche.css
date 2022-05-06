@@ -43,6 +43,8 @@ li {
 .nav_ul1,
 .nav_ul2 li {
     float: left;
+    font-size: 12px;
+    color: #999;
 }
 
 .nav_ul1 li {
@@ -55,7 +57,7 @@ li {
 .nav_ul2 a,
 .nav_ul2 span {
     font-size: 12px;
-    color: gray;
+    color: #999;
 }
 
 .nav_ul2 {
@@ -66,6 +68,14 @@ li {
 .nav_ul2 span {
     line-height: 30px;
     margin-left: 15px;
+}
+
+.nav_ul2 li div {
+    float: left;
+}
+
+.aaa {
+    margin-right: 10px;
 }
 
 .nav a:hover {
@@ -187,7 +197,7 @@ li {
 
 /*商品详情展示开始*/
 
-.info {
+.info ul {
     width: 1000px;
     height: 125px;
     background-color: #fff4e8;
@@ -250,6 +260,10 @@ li {
 
 .info_7 {
     margin-left: 40px;
+}
+
+.del {
+    padding: 2px;
 }
 
 

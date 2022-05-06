@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>商品详情</title>
-    <!-- <link rel="Shortcut Icon" href="./favicon.ico" type="image/x-icon" /> -->
+    <link rel="Shortcut Icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="../css/jd-shangpin.css">
     <link rel="stylesheet" type="text/css" href="../font/icomoon.css">
-    <!-- <script type="text/javascript" src="js/watch.js"></script> -->
 
 </head>
 
-<body>
+<body data-id="5">
     <!-- https://item.jd.com/8999657.html -->
     <!-- 屏幕右方固定按钮 -->
     <div class="righter"></div>
@@ -41,13 +40,19 @@
                         <i class="icon-home">&#xe900;</i>
                         <a href="../images/img-shangpin/jd.html" style="text-decoration: none;color: #999999">京东首页</a>
                     </div>
-                    <div id="dingwei" style="float: left;" onmouseenter="dingweijs1()" onmouseleave="dingweijs2()">
-                        <i class="icon-location1" style="color: #999999">&#xe949;</i>
+                    <div id="dingwei" style="float: left;">
+                        <i class="icon-location1" style="color: #f10215;">&#xe949;</i>
                         <a style="margin-left: 0">北京</a>
                     </div>
                     <div style="float: right;">
-                        <div class="aaa"><a id="login" href="../images/img-shangpin/login.html" target="_blank">你好，请登录</a></div>
-                        <div class="aaa" style="color: #EF3E15;">免费注册</div>
+                        <div class="login1" style="float: left;">
+                            <div class="aaa"><a id="login" href="../html/jd-denglu.html?ReturnUrl=./jd-shangpin.html">你好，请登录</a></div>
+                            <div class="aaa" style="color: #f10215;">免费注册</div>
+                        </div>
+                        <div class="login2" style="display: none;float: left;">
+                            <div class="aaa" style="color: #999999">你好,<a href="#none" class="uname" style="color: #999999">admin</a></div>
+                            <div class="aaa"><a href="#none" class="tuichu" href="./jd-denglu.html?ReturnUrl=./jd-shangpin.html" style="color: #999999">退出</a></div>
+                        </div>
                         <div class="aaa">|</div>
                         <div class="aaa">我的订单</div>
                         <div class="aaa">|</div>
@@ -76,12 +81,12 @@
             </div>
             <div id="search">
                 <div class="aad">
-                    <input type="text" value="" placeholder="天梭表" class="aab">
+                    <input type="text" value="" placeholder="电视机" class="aab">
                 </div>
                 <div class="aac">
                     <i class="icon-search">搜本站</i>
                 </div>
-                <div class="aac" style="background-color: #474E5C;">
+                <div class="aac" style="background-color: #474E5C;border-bottom: 1px solid #474E5C;">
                     <i class="icon-search">搜本店</i>
                 </div>
                 <div class="aae">
@@ -90,276 +95,277 @@
             </div>
             <!-- 购物车 -->
             <div id="GWC">
-                <i class="icon-cart">&#xe93a;</i> &nbsp;我的购物车
-                <a style="position: relative;bottom: 7px;">0</a>
+                <i class="icon-cart">&#xe93a;</i> &nbsp;
+                <a href="./jd-gouwuche.html" style="color: #666;">我的购物车</a>
+                <a class="cartNum" style=" position: relative;bottom: 7px; ">0</a>
             </div>
             <!-- 搜索框下方关键词 -->
-            <div class="aaf">
-                <a>欧米伽</a>
-                <a>万国</a>
-                <a>NOMOS</a>
-                <a>RADO</a>
-                <a>DW</a>
-                <a>泰格豪雅</a>
-                <a>天梭</a>
+            <div class="aaf ">
+                <a>电视</a>
+                <a>电脑</a>
+                <a>手机</a>
+                <a>iPad</a>
+                <a>iPad Air</a>
+                <a>iPad mini</a>
+                <a>iPad Pro</a>
             </div>
         </div>
     </div>
 
-    <div style="margin-top: 20px;overflow: hidden;">
-        <img src="../images/img-shangpin/aa1.jpg" width="" style="width:1920px;margin:0 calc(50% - 960px);">
+    <div style="margin-top: 20px;overflow: hidden; ">
+        <!-- <img src="../images/img-shangpin/aa1.jpg " width=" " style="width:1920px;margin:0 calc(50% - 960px); "> -->
     </div>
     <!-- 导航栏 -->
-    <div id="watch_daohang">
-        <div class="meau">
+    <div id="watch_daohang ">
+        <div class="meau ">
             <ul>
                 <li>首页</li>
                 <li>全部分类</li>
                 <li>全部款式</li>
                 <li>店铺爆款</li>
-                <li>机械表</li>
-                <li>男士手表</li>
-                <li>女士腕表</li>
-                <li>情侣对表</li>
+                <li>电视</li>
+                <li>电脑</li>
+                <li>手机</li>
+                <li>iPad</li>
             </ul>
-            <div class="watch_search">
-                <div class="watch_s1">
-                    <input type="text" value="" placeholder="天梭表" class="watch_s3">
+            <div class="watch_search ">
+                <div class="watch_s1 ">
+                    <input type="text " value=" " placeholder="电视机 " class="watch_s3 ">
                 </div>
-                <div class="watch_s2">
+                <div class="watch_s2 ">
                     搜索
                 </div>
             </div>
         </div>
     </div>
-    <div class="daohang2">
-        <div class="daohang2_1">
-            <div class="daohang2_left">
-                <a>钟表</a><a>></a>
-                <a>腕表</a><a>></a>
-                <a>瑞表</a><a>></a>
-                <a>艾戈勒（AGELOCER）</a><a>></a>
-                <a>艾戈勒（agelocer）</a>
+    <div class="daohang2 ">
+        <div class="daohang2_1 ">
+            <div class="daohang2_left ">
+                <a>家电</a><a>></a>
+                <a>大家电</a><a>></a>
+                <a>平板电视</a><a>></a>
+                <a>小米</a><a>></a>
+                <a>PPTV-32C3</a>
             </div>
-            <div class="daohang2_right">
-                <div class="daohang3">
-                    <img src="../images/img-shangpin/jdhd.png" width="100%">
+            <div class="daohang2_right ">
+                <div class="daohang3 ">
+                    <img src="../images/img-shangpin/jdhd.png " width="100% ">
                 </div>
-                <div>艾戈勒官方旗舰店</div>
-                <div class="daohang3">
-                    <img src="../images/img-shangpin/aa2.png" width="100%">
+                <div>小米官方旗舰店</div>
+                <div class="daohang3 ">
+                    <img src="../images/img-shangpin/aa2.png " width="100% ">
                 </div>
-                <div style="color: #E33B3E;">9.61<i class=" icon-arrow-up">&#xea34;</i></div>
-                <div><i class=" icon-bubble2" style="color: #5A93FE;margin-right: 5px;">&#xe970;</i>联系客服</div>
-                <div><i class=" icon-grin" style="color: #E33B3E ;margin-right: 5px;">&#xe9eb;</i>收藏店铺</div>
+                <div style="color: #E33B3E; ">9.61<i class=" icon-arrow-up ">&#xea34;</i></div>
+                <div><i class=" icon-bubble2 " style="color: #5A93FE;margin-right: 5px; ">&#xe970;</i>联系客服</div>
+                <div><i class=" icon-grin " style="color: #E33B3E ;margin-right: 5px; ">&#xe9eb;</i>收藏店铺</div>
             </div>
         </div>
     </div>
     <!-- 商品信息 -->
-    <div id="information" class="clearfix">
-        <div class="info_three info_1">
-            <div class="info_1_img">
-                <img src="../images/img-shangpin/suo1.jpg" width="350">
-                <div class="mask" id="mask"></div>
+    <div id="information " class="clearfix ">
+        <div class="info_three info_1 clearfix ">
+            <div class="info_1_img ">
+                <img class="imgGood " src="../images/img-shangpin/suo1.jpg " width="350 ">
+                <div class="mask " id="mask "></div>
             </div>
-            <div class="big" id="big">
+            <div class="big " id="big ">
                 <!-- 放大倍数=bigimgwidth/smallimgwidth=bigwidth/maskwidth -->
-                <img src="../images/img-shangpin/suo1.jpg" id="img" width="700" alt="" id="img" />
+                <img class="imgGood " src="../images/img-shangpin/suo4.jpg " id="img " width="700 " alt=" " id="img " />
             </div>
-            <div class="info_1_suo">
+            <div class="info_1_suo ">
                 <ul>
-                    <li id="info_1_i"><i class=" icon-circle-left1">&#xea51;</i></li>
-                    <li class="ac"><img src="../images/img-shangpin/suo1.jpg" width="100%"></li>
-                    <li><img src="../images/img-shangpin/suo2.jpg" width="100%"></li>
-                    <li><img src="../images/img-shangpin/suo3.jpg" width="100%"></li>
-                    <li><img src="../images/img-shangpin/suo5.jpg" width="100%"></li>
-                    <li><img src="../images/img-shangpin/suo4.jpg" width="100%"></li>
-                    <li id="info_1_i"><i class="icon-circle-right1">&#xea4e;</i></li>
+                    <li id="info_1_i "><i class=" icon-circle-left1 ">&#xea51;</i></li>
+                    <li class="ac ">
+                        <img class="imgGood " src=" ../images/img-shangpin/suo4.jpg " width="100% "></li>
+                    <li><img src="../images/img-shangpin/suo2.jpg " width="100% "></li>
+                    <li><img src="../images/img-shangpin/suo3.jpg " width="100% "></li>
+                    <li><img src="../images/img-shangpin/suo5.jpg " width="100% "></li>
+                    <li><img src="../images/img-shangpin/suo1.jpg " width="100% "></li>
+                    <li id="info_1_i "><i class="icon-circle-right1 ">&#xea4e;</i></li>
                 </ul>
             </div>
-            <div class="info_1_bottom">
-                <div style="float: left;">
-                    <i class="icon-heart">&#xe9dc;</i>
+            <div class="info_1_bottom clearfix ">
+                <div style="float: left; ">
+                    <i class="icon-heart ">&#xe9dc;</i>
                     <a>关注</a>
-                    <i class="icon-share2">&#xea91;</i></a>
+                    <i class="icon-share2 ">&#xea91;</i></a>
                     <a>分享</a>
                 </div>
-                <div style="float: right;">
+                <div style="float: right; ">
                     <a>举报</a>
                 </div>
             </div>
         </div>
-        <div class="info_three info_2">
-            <div class="info_2_tittle">
-                <a><b>
-                    艾戈勒（AGELOCER）手表布达佩斯系列时尚简约男士自动机械表 防水大背透大日历中国潮流腕表</b></a>
+        <div class="info_three info_2 clearfix ">
+            <div class="info_2_tittle ">
+                <!-- <a><b>
+                    艾戈勒（AGELOCER）手表布达佩斯系列时尚简约男士自动机械表 防水大背透大日历中国潮流腕表</b></a> -->
             </div>
             <!-- 京东秒杀下方详情信息 -->
-            <div class="info_2_miaoshaInfo">
-                <div class="miaoshaInfo1">
-                    <div class="miaoshaInfo_left">京&ensp;东&ensp;价</div>
-                    <div class="dd">
-                        <span class="miaoshaInfo_middle">
-                        <span style="font-size: 16px;">￥</span>
-                        <span style="font-size: 22px;">3199.00</span>
+            <div class="info_2_miaoshaInfo ">
+                <div class="miaoshaInfo1 ">
+                    <!-- <div class="miaoshaInfo_left ">京&ensp;东&ensp;价</div>
+                    <div class="dd ">
+                        <span class="miaoshaInfo_middle ">
+                        <span style="font-size: 16px; ">￥</span>
+                        <span style="font-size: 22px; ">3199.00</span>
                         </span>
-                        <a id="jiangjia">降价通知</a>
-                        <div class="student-price">
-                            <em>￥2430.00</em><i></i>
+                        <a id="jiangjia ">降价通知</a>
+                        <div class="student-price ">
+                            <em><strike>￥2430.00</strike></em><i></i>
                             <span>仅完成注册认证的京东校园用户可享受</span>
                         </div>
-                        <div class="miaoshaInfo_right clearfix">
-                            <p style="font-size: 13px;color: #999;">累计评价</p>
-                            <p id="leiji">3000+</p>
-                        </div>
-                    </div>
+                        <div class="miaoshaInfo_right clearfix ">
+                            <p style="font-size: 13px;color: #999; ">累计评价</p>
+                            <p id="leiji ">3000+</p>
+                        </div> -->
                 </div>
-                <div class="miaoshaInfo3 clearfix">
-                    <div class="miaoshaInfo_left">促&emsp;&ensp;销</div>
-                    <div class="miaoshaInfo3_middle dd">
-                        <div class="miaoshaInfo3_middle_a">
-                            <div class="prom-item" data-code="15">
-                                <em class="hl_red_bg">满减</em>
-                                <em class="hl_red">满2000元减400元</em> &nbsp;&nbsp;
-                                <a href="#none" style="color: #666;">详情<span>&gt;&gt;</span></a>
-                            </div>
-                            <div class="prom-item" data-code="15">
-                                <em class="hl_red_bg">满减</em>
-                                <em class="hl_red">满400元减50元</em> </div>
+            </div>
+            <div class="miaoshaInfo3 clearfix ">
+                <div class="miaoshaInfo_left ">促&emsp;&ensp;销</div>
+                <div class="miaoshaInfo3_middle dd ">
+                    <div class="miaoshaInfo3_middle_a ">
+                        <div class="prom-item " data-code="15 ">
+                            <em class="hl_red_bg ">满减</em>
+                            <em class="hl_red ">满2000元减400元</em> &nbsp;&nbsp;
+                            <a href="#none " style="color: #666; ">详情<span>&gt;&gt;</span></a>
                         </div>
-                        <div class="miaoshaInfo3_middle_a">
-                            <em class="hl_red"><i class="sprite-tips"></i>以下"满减"仅可任选其一，可在购物车更改</em>
-                        </div>
+                        <div class="prom-item " data-code="15 ">
+                            <em class="hl_red_bg ">满减</em>
+                            <em class="hl_red ">满400元减50元</em> </div>
+                    </div>
+                    <div class="miaoshaInfo3_middle_a ">
+                        <em class="hl_red "><i class="sprite-tips "></i>以下"满减 "仅可任选其一，可在购物车更改</em>
                     </div>
                 </div>
             </div>
-            <div class="content">
+            <div class="content clearfix ">
                 <!-- 配送至 -->
-                <div id="peiSongZhi">
-                    <div class="miaoshaInfo_left">
+                <div id="peiSongZhi ">
+                    <div class="miaoshaInfo_left ">
                         配&ensp;送&ensp;至
                     </div>
                     <div class="dd ">
-                        <div class="clearfix store">
-                            <div class="stock-address">
-                                <div class="area1"> 北京朝阳区管庄地区
+                        <div class="clearfix store ">
+                            <div class="stock-address ">
+                                <div class="area1 "> 北京朝阳区管庄地区
                                     <b></b></div>
                             </div>
-                            <div class="store-prompt">
+                            <div class="store-prompt ">
                                 <strong>有货</strong></div>
-                            <div class="promise-icon-more" style="display: block;">
-                                <div style="float: left;">支持</div>
-                                <div class="services">
-                                    <div><a href="#none">99元免基础运费</a><i>|</i>
-                                        <a href="#none">30天价保</a></div>
+                            <div class="promise-icon-more " style="display: block; ">
+                                <div style="float: left; ">支持</div>
+                                <div class="services ">
+                                    <div><a href="#none ">99元免基础运费</a><i>|</i>
+                                        <a href="#none ">30天价保</a></div>
                                 </div>
                             </div>
                         </div>
-                        <div style="color: #999;">
-                            <em class="hl_red_bg">厂商配送</em> 由
-                            <span style="color: #DF3033">艾戈勒官方旗舰店</span>负责发货, 并提供售后服务. 今日17:00前完成下单,预计1月8日02:00前发货,1月10日24:00前送达
+                        <div style="color: #999; ">
+                            <em class="hl_red_bg ">厂商配送</em> 由
+                            <span style="color: #DF3033 ">艾戈勒官方旗舰店</span>负责发货, 并提供售后服务. 今日17:00前完成下单,预计1月8日02:00前发货,1月10日24:00前送达
                         </div>
                     </div>
                 </div>
-                <div class="summary-weight">
-                    <div class="miaoshaInfo_left">重&nbsp;&nbsp;量</div>
-                    <div class="dd">不计重量</div>
+                <div class="summary-weight ">
+                    <div class="miaoshaInfo_left ">重&nbsp;&nbsp;量</div>
+                    <div class="dd ">不计重量</div>
                 </div>
-                <div class="summary-line" style="height: 0;overflow: hidden;border-bottom: 1px dotted #dfdfdf; margin-bottom: 15px;"></div>
+                <div class="summary-line " style="height: 0;overflow: hidden;border-bottom: 1px dotted #dfdfdf; margin-bottom: 15px; "></div>
                 <!-- 增值保障 -->
-                <div id="choose-service" style="display: block;">
-                    <div class="miaoshaInfo_left">增值保障</div>
-                    <div class="dd">
-                        <div class="service-yb clearfix">
-                            <div class="yb-item">
-                                <img class="icon" src="../images/img-shangpin/590c0c85N460e4552.png">
-                                <span class="name">全保修2年</span> <span class="price">￥139.00</span>
-                                <i class="arrow-icon"></i>
+                <div id="choose-service " style="display: block; ">
+                    <div class="miaoshaInfo_left ">增值保障</div>
+                    <div class="dd ">
+                        <div class="service-yb clearfix ">
+                            <div class="yb-item ">
+                                <img class="icon " src="../images/img-shangpin/590c0c85N460e4552.png ">
+                                <span class="name ">全保修2年</span> <span class="price ">￥139.00</span>
+                                <i class="arrow-icon "></i>
                             </div>
-                            <div class="yb-item">
-                                <img class="icon" src="../images/img-shangpin/5992a59bNd253524f.png">
-                                <span class="name">进液保2年</span> <span class="price">￥99.00</span>
-                                <i class="arrow-icon"></i>
+                            <div class="yb-item ">
+                                <img class="icon " src="../images/img-shangpin/5992a59bNd253524f.png ">
+                                <span class="name ">进液保2年</span> <span class="price ">￥99.00</span>
+                                <i class="arrow-icon "></i>
                             </div>
-                            <div class="bt-info-tips">
-                                <a href="#none">
-                                    <i class="question-icon"></i>
+                            <div class="bt-info-tips ">
+                                <a href="#none ">
+                                    <i class="question-icon "></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- 京东服务 -->
-                <div class="choose-service" style="display: block;">
-                    <div class="miaoshaInfo_left" style="line-height: 30px;">京东服务</div>
-                    <div class="dd">
-                        <div class="service-wrap clearfix">
-                            <div class="service">
-                                <div class="service__head">
-                                    <img class="icon" src="http://img30.360buyimg.com/test/jfs/t1/46900/24/1729/657/5cf870aeE625f892c/b507e69d1a05e8e2.png"> <span class="name">4年只换不修</span> <span class="price">￥298.00</span>
-                                    <i class="arrow-icon"></i>
+                <div class="choose-service " style="display: block; ">
+                    <div class="miaoshaInfo_left " style="line-height: 30px; ">京东服务</div>
+                    <div class="dd ">
+                        <div class="service-wrap clearfix ">
+                            <div class="service ">
+                                <div class="service__head ">
+                                    <img class="icon " src="http://img30.360buyimg.com/test/jfs/t1/46900/24/1729/657/5cf870aeE625f892c/b507e69d1a05e8e2.png "> <span class="name ">4年只换不修</span> <span class="price ">￥298.00</span>
+                                    <i class="arrow-icon "></i>
                                 </div>
                             </div>
-                            <div class="service">
-                                <div class="service__head">
-                                    <img class="icon" src="http://img30.360buyimg.com/test/jfs/t17608/333/2009181120/1984/7b7f307e/5ae2a5e7Ncb8d6358.png"> <span class="name">腕表保养取送</span> <span class="price">￥200.00</span>
-                                    <i class="arrow-icon"></i>
+                            <div class="service ">
+                                <div class="service__head ">
+                                    <img class="icon " src="http://img30.360buyimg.com/test/jfs/t17608/333/2009181120/1984/7b7f307e/5ae2a5e7Ncb8d6358.png "> <span class="name ">腕表保养取送</span> <span class="price ">￥200.00</span>
+                                    <i class="arrow-icon "></i>
                                 </div>
                             </div>
-                            <div class="service">
-                                <div class="service__head">
-                                    <img class="icon" src="http://img30.360buyimg.com/test/jfs/t1/37329/33/10959/1863/5cf8709bE2ee75055/a2785873065cf33e.png"> <span class="name">腕表调节</span> <span class="price">￥9.90</span>
-                                    <i class="arrow-icon"></i>
+                            <div class="service ">
+                                <div class="service__head ">
+                                    <img class="icon " src="http://img30.360buyimg.com/test/jfs/t1/37329/33/10959/1863/5cf8709bE2ee75055/a2785873065cf33e.png "> <span class="name ">腕表调节</span> <span class="price ">￥9.90</span>
+                                    <i class="arrow-icon "></i>
 
                                 </div>
                             </div>
-                            <div class="bt-info-tips"> <a href="#none"><i class="question-icon"></i></a>
+                            <div class="bt-info-tips "> <a href="#none "><i class="question-icon "></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- 白条分期 -->
-                <div class="choose-baitiao clearfix">
-                    <div class="miaoshaInfo_left">白条分期</div>
-                    <div class="dd">
-                        <div class="item">
-                            <a href="#none"> <strong>不分期</strong>
+                <div class="choose-baitiao clearfix ">
+                    <div class="miaoshaInfo_left ">白条分期</div>
+                    <div class="dd ">
+                        <div class="item ">
+                            <a href="#none "> <strong>不分期</strong>
                             </a>
                         </div>
-                        <div class="item">
-                            <a href="#none"> <strong>￥826.66 x 3期</strong> </a>
+                        <div class="item ">
+                            <a href="#none "> <strong>￥826.66 x 3期</strong> </a>
                         </div>
-                        <div class="item">
-                            <a href="#none"> <strong> ￥413.35 x 6期  </strong> </a>
+                        <div class="item ">
+                            <a href="#none "> <strong> ￥413.35 x 6期  </strong> </a>
                         </div>
-                        <div class="item">
-                            <a href="#none"> <strong>￥219.03 x 12期  </strong> </a>
+                        <div class="item ">
+                            <a href="#none "> <strong>￥219.03 x 12期  </strong> </a>
                         </div>
-                        <div class="item">
-                            <a href="#none"> <strong>￥115.81 x 24期</strong> </a>
+                        <div class="item ">
+                            <a href="#none "> <strong>￥115.81 x 24期</strong> </a>
                         </div>
-                        <div class="bt-info-tips">
-                            <a class="bt-icon" href="#none">　</a>
+                        <div class="bt-info-tips ">
+                            <a class="bt-icon " href="#none ">　</a>
                         </div>
-                        <div class="bt-info-tips">
-                            <a class="question-icon" href="#none">　</a>
+                        <div class="bt-info-tips ">
+                            <a class="question-icon " href="#none ">　</a>
                         </div>
                     </div>
                 </div>
                 <!-- 购物车 -->
-                <div class="choose-btns clearfix">
-                    <div class="wrap-input">
-                        <input class="buy-num" value="1">
-                        <a class="btn-reduce" href="#none">-</a>
-                        <a class="btn-add" href="#none">+</a>
+                <div class="choose-btns clearfix ">
+                    <div class="wrap-input ">
+                        <input class="buy-num " value="1 ">
+                        <a class="btn-reduce ">-</a>
+                        <a class="btn-add ">+</a>
                     </div>
-                    <a href="#none" class="btn-lg">加入购物车</a>
+                    <a href="#none " class="btn-lg ">加入购物车</a>
                 </div>
                 <!-- 温馨提示 -->
-                <div class="summary-tips">
-                    <div class="miaoshaInfo_left" style="height: 18px;line-height: 18px;">温馨提示</div>
-                    <div class="dd">
-                        <ol class="clearfix">
+                <div class="summary-tips ">
+                    <div class="miaoshaInfo_left " style="height: 18px;line-height: 18px; ">温馨提示</div>
+                    <div class="dd ">
+                        <ol class="clearfix ">
                             <li>·支持7天无理由退货</li>
                             <li>·此商品不可使用全品类京券、全品类东券</li>
                         </ol>
@@ -367,28 +373,28 @@
                 </div>
             </div>
         </div>
-        <div class="info_three info_3">
-            <div class="info_3_top">
-                <a style="float: left;">———</a>
+        <div class="info_three info_3 ">
+            <div class="info_3_top ">
+                <a style="float: left; ">———</a>
                 <span>看了又看</span>
-                <a style="float: right;">———</a>
+                <a style="float: right; ">———</a>
             </div>
-            <div class="info_3_img">
-                <img src="../images/img-shangpin/right1.jpg" width="150" height="150">
+            <div class="info_3_img ">
+                <img src="../images/img-shangpin/right1.jpg " width="150 " height="150 ">
                 <div>
                     <nobr>艾戈勒（agelocer）布达佩斯系列瑞士进口手表多功能商务男表 全自动机械表带日历 银壳疯马皮带 动能指示 4101A2</nobr>
                 </div>
                 <p>￥3199</p>
             </div>
-            <div class="info_3_img">
-                <img src="../images/img-shangpin/right2.jpg" width="150" height="150">
+            <div class="info_3_img ">
+                <img src="../images/img-shangpin/right2.jpg " width="150 " height="150 ">
                 <div>
                     <nobr>艾戈勒（agelocer）布达佩斯系列瑞士进口手表多功能商务男表 全自动机械表带日历 银壳疯马皮带 动能指示 4101A2</nobr>
                 </div>
                 <p>￥1990</p>
             </div>
-            <div class="info_3_img">
-                <img src="../images/img-shangpin/right3.jpg" width="150" height="150">
+            <div class="info_3_img ">
+                <img src="../images/img-shangpin/right3.jpg " width="150 " height="150 ">
                 <div>
                     <nobr>艾戈勒（agelocer）布达佩斯系列瑞士进口手表多功能商务男表 全自动机械表带日历 银壳疯马皮带 动能指示 4101A2</nobr>
                 </div>
@@ -396,257 +402,263 @@
             </div>
         </div>
     </div>
+
+
     <!-- 网页中部内容 -->
-    <div class="watch_middle">
+    <div class="watch_middle ">
         <!-- 店长推荐 -->
-        <div id="dianZhangTuiJian">
-            <div id="dianZhangTuiJian_top">
-                <div id="dianzhangtuijian">店长推荐</div>
+        <div id="dianZhangTuiJian ">
+            <div id="dianZhangTuiJian_top ">
+                <div id="dianzhangtuijian ">店长推荐</div>
             </div>
-            <div id="dianZhangTuiJian_img">
-                <li><img src="../images/img-shangpin/right1.jpg">
+            <div id="dianZhangTuiJian_img ">
+                <li><img src="../images/img-shangpin/right1.jpg ">
                     <p><b>￥3199.00</b></p>
                 </li>
-                <li><img src="../images/img-shangpin/right2.jpg">
+                <li><img src="../images/img-shangpin/right2.jpg ">
                     <p><b>￥2199.00</b></p>
                 </li>
-                <li><img src="../images/img-shangpin/right3.jpg">
+                <li><img src="../images/img-shangpin/right3.jpg ">
                     <p><b>￥3200.00</b></p>
                 </li>
-                <li><img src="../images/img-shangpin/right4.jpg">
+                <li><img src="../images/img-shangpin/right4.jpg ">
                     <p><b>￥2699.00</b></p>
                 </li>
-                <li><img src="../images/img-shangpin/right5.jpg">
+                <li><img src="../images/img-shangpin/right5.jpg ">
                     <p><b>￥1899.00</b></p>
                 </li>
-                <li><img src="../images/img-shangpin/right1.jpg">
+                <li><img src="../images/img-shangpin/right1.jpg ">
                     <p><b>￥1799.00</b></p>
                 </li>
             </div>
         </div>
 
         <!-- 艾戈勒官方旗舰店 商品介绍-->
-        <div style="width: 100%;height: 2000px;">
+        <div style="width: 100%; ">
             <!-- 旗舰店-->
-            <div id="qiJianDianInfo">
+            <div id="qiJianDianInfo ">
                 <!-- 艾戈勒官方旗舰店 -->
-                <div id="qiJianDian">
-                    <div id="qiJianDian_top"><b class="changeColor">艾戈勒官方旗舰店</b>
-                        <i style="color: #5B94FE" class="icon-bubbles3">&#xe971;</i>
+                <div id="qiJianDian ">
+                    <div id="qiJianDian_top "><b class="changeColor ">艾戈勒官方旗舰店</b>
+                        <i style="color: #5B94FE " class="icon-bubbles3 ">&#xe971;</i>
                     </div>
-                    <div id="qiJianDian_middle">
-                        <div class="qiJianDian_left"><b>9.62</b></div>
-                        <div class="qiJianDian_right">
-                            <p>商品评价&ensp;9.56&nbsp;<i style="color: #E33333;" class=" icon-arrow-up">&#xea34;</i></p>
-                            <p>服务态度&ensp;9.56&nbsp;<i style="color: #E33333;" class=" icon-arrow-up">&#xea34;</i></p>
-                            <p>物流速度&ensp;9.56&nbsp;<i style="color: #E33333;" class=" icon-arrow-up">&#xea34;</i></p>
+                    <div id="qiJianDian_middle ">
+                        <div class="qiJianDian_left "><b>9.62</b></div>
+                        <div class="qiJianDian_right ">
+                            <p>商品评价&ensp;9.56&nbsp;<i style="color: #E33333; " class=" icon-arrow-up ">&#xea34;</i></p>
+                            <p>服务态度&ensp;9.56&nbsp;<i style="color: #E33333; " class=" icon-arrow-up ">&#xea34;</i></p>
+                            <p>物流速度&ensp;9.56&nbsp;<i style="color: #E33333; " class=" icon-arrow-up ">&#xea34;</i></p>
                         </div>
                     </div>
-                    <div id="qiJianDian_bottom">
-                        <div class="qiJianDianBottom">
-                            <i class=" icon-home3">&#xe902;</i>进店逛逛
+                    <div id="qiJianDian_bottom ">
+                        <div class="qiJianDianBottom ">
+                            <i class=" icon-home3 ">&#xe902;</i>进店逛逛
                         </div>
-                        <div class="qiJianDianBottom">
-                            <i class="icon-star-full">&#xe9db;</i>关注店铺
+                        <div class="qiJianDianBottom ">
+                            <i class="icon-star-full ">&#xe9db;</i>关注店铺
                         </div>
                     </div>
                 </div>
                 <!-- 店内搜索 -->
-                <div id="dianNeiSouSuo">
-                    <div id="qiJianDian_top"><b>店内搜索</b></div>
-                    <div class="dianNeiSouSuo_guan">
+                <div id="dianNeiSouSuo ">
+                    <div id="qiJianDian_top "><b>店内搜索</b></div>
+                    <div class="dianNeiSouSuo_guan ">
                         关键字：
-                        <input type="text" name="" class="input_guan">
+                        <input type="text " name=" " class="input_guan ">
                     </div>
-                    <div class="dianNeiSouSuo_guan">
+                    <div class="dianNeiSouSuo_guan ">
                         价&emsp;格：
-                        <input type="text" name="" class="input_price"> 到
-                        <input type="text" name="" class="input_price">
+                        <input type="text " name=" " class="input_price "> 到
+                        <input type="text " name=" " class="input_price ">
                     </div>
-                    <div id="dianNeiSouSuo_serchar">
+                    <div id="dianNeiSouSuo_serchar ">
                         搜索
                     </div>
                 </div>
             </div>
             <!-- 商品介绍 -->
-            <div id="shangPinInfo">
+            <div id="shangPinInfo ">
                 <!-- 商品介绍 -->
-                <div id="shangPinJieShao">
-                    <div class="shangPinJieShao_top">
-                        <div class="shangPinJieShao_top_1">商品介绍</div>
-                        <div class="shangPinJieShao_top_2 changeColor">规格和包装</div>
-                        <div class="shangPinJieShao_top_2 changeColor">售后保障</div>
-                        <div class="shangPinJieShao_top_2 changeColor">商品评价(3000+)</div>
-                        <div class="shangPinJieShao_top_2 changeColor">本店好评商品</div>
-                        <div class="shangPinJieShao_top_gou">加入购物车</div>
+                <div id="shangPinJieShao ">
+                    <div class="shangPinJieShao_top ">
+                        <div class="changeOn ">商品介绍</div>
+                        <div class=" ">关联推荐</div>
+                        <div class=" ">温馨提示</div>
+                        <div class=" ">商品详情</div>
+                        <div class=" ">安装说明</div>
                     </div>
-                    <div class="shangPinJieShao_main">
-                        <div class="first_ul" style="margin-top: 30px;">品牌： <a style="color: #6C69B7;">艾戈勒（AGELOCER）</a></div>
-                        <div class="first_ul">
+                    <div class="shangPinJieShao_main ">
+                        <!-- <div class="first_ul " style="margin-top: 30px; ">品牌： <a style="color: #6C69B7; ">艾戈勒（AGELOCER）</a></div>
+                        <div class="first_ul ">
                             <li>商品名称：艾戈勒（agelocer）布达</li>
                             <li>商品编号：11198917385</li>
                             <li>店铺： 艾戈勒官方旗舰店</li>
                             <li>商品毛重：1.2kg</li>
                         </div><br>
-                        <div class="first_ul">
+                        <div class="first_ul ">
                             <li>商品产地：瑞士</li>
                             <li>表壳：精钢</li>
                             <li>风格：商务，休闲，时尚，其它</li>
                             <li>功能：日期显示，其它</li>
                         </div><br>
-                        <div class="first_ul">
+                        <div class="first_ul ">
                             <li>防水：50米</li>
                             <li>表盘：圆形</li>
                             <li>机芯：自动机械</li>
                             <li>表底：透底</li>
                         </div><br>
-                        <div class="first_ul last_ul">
+                        <div class="first_ul last_ul ">
                             更多参数>>
-                        </div>
+                        </div> -->
+                        <!-- 图片 -->
+                        <!-- <div id="shangPinJieShao_img ">
+                    <img src="../images/img-shangpin/main1.jpg ">
+                    <img src="../images/img-shangpin/main2.jpg ">
+                    <img src="../images/img-shangpin/main3.jpg ">
+                    <img src="../images/img-shangpin/main4.jpg ">
+                    <img src="../images/img-shangpin/main5.jpg ">
+                </div> -->
                     </div>
-                </div>
-                <!-- 图片 -->
-                <div id="shangPinJieShao_img">
-                    <img src="../images/img-shangpin/main1.jpg">
-                    <img src="../images/img-shangpin/main2.jpg">
-                    <img src="../images/img-shangpin/main3.jpg">
-                    <img src="../images/img-shangpin/main4.jpg">
-                    <img src="../images/img-shangpin/main5.jpg">
                 </div>
             </div>
         </div>
     </div>
     <!-- 网页底部内容 -->
 
-    <div class="cont"></div>
-    <div id="dkhs">
-        <img src="../images/img-index/dkhs.jpg" style="width:1190px;margin: auto;" />
+    <div class="cont "></div>
+    <div id="dkhs ">
+        <img src="../images/img-index/dkhs.jpg " style="width:1190px;margin: auto; " />
     </div>
-    <div id="cont1">
-        <div id="last1">
-            <div class="one">
-                <div class="one1">购物指南</div>
-                <div class="one2">购物流程</div>
-                <div class="one2">会员介绍</div>
-                <div class="one2">生活旅行</div>
-                <div class="one2">常见问题</div>
-                <div class="one2">大家电</div>
-                <div class="one2">联系客服</div>
+    <div id="cont1 ">
+        <div id="last1 ">
+            <div class="one ">
+                <div class="one1 ">购物指南</div>
+                <div class="one2 ">购物流程</div>
+                <div class="one2 ">会员介绍</div>
+                <div class="one2 ">生活旅行</div>
+                <div class="one2 ">常见问题</div>
+                <div class="one2 ">大家电</div>
+                <div class="one2 ">联系客服</div>
             </div>
-            <div class="one">
-                <div class="one1">配送方式</div>
-                <div class="one2">上门自提</div>
-                <div class="one2">211限时达</div>
-                <div class="one2">配送服务查询</div>
-                <div class="one2">配送费收取标准</div>
-                <div class="one2">海外配送</div>
+            <div class="one ">
+                <div class="one1 ">配送方式</div>
+                <div class="one2 ">上门自提</div>
+                <div class="one2 ">211限时达</div>
+                <div class="one2 ">配送服务查询</div>
+                <div class="one2 ">配送费收取标准</div>
+                <div class="one2 ">海外配送</div>
             </div>
-            <div class="one">
-                <div class="one1">支付方式</div>
-                <div class="one2">货到付款</div>
-                <div class="one2">在线支付</div>
-                <div class="one2">分期付款</div>
-                <div class="one2">邮局汇款</div>
-                <div class="one2">公司转账</div>
+            <div class="one ">
+                <div class="one1 ">支付方式</div>
+                <div class="one2 ">货到付款</div>
+                <div class="one2 ">在线支付</div>
+                <div class="one2 ">分期付款</div>
+                <div class="one2 ">邮局汇款</div>
+                <div class="one2 ">公司转账</div>
             </div>
-            <div class="one">
-                <div class="one1">售后服务</div>
-                <div class="one2">售后政策</div>
-                <div class="one2">价格保护</div>
-                <div class="one2">退款说明</div>
-                <div class="one2">返修/退换货</div>
-                <div class="one2">取消订单</div>
+            <div class="one ">
+                <div class="one1 ">售后服务</div>
+                <div class="one2 ">售后政策</div>
+                <div class="one2 ">价格保护</div>
+                <div class="one2 ">退款说明</div>
+                <div class="one2 ">返修/退换货</div>
+                <div class="one2 ">取消订单</div>
             </div>
-            <div class="one">
-                <div class="one1">特色服务</div>
-                <div class="one2">夺宝岛</div>
-                <div class="one2">DIY装机</div>
-                <div class="one2">延保服务</div>
-                <div class="one2">京东E卡</div>
-                <div class="one2">京东通信</div>
-                <div class="one2">京东JD+</div>
+            <div class="one ">
+                <div class="one1 ">特色服务</div>
+                <div class="one2 ">夺宝岛</div>
+                <div class="one2 ">DIY装机</div>
+                <div class="one2 ">延保服务</div>
+                <div class="one2 ">京东E卡</div>
+                <div class="one2 ">京东通信</div>
+                <div class="one2 ">京东JD+</div>
             </div>
-            <div id="two">
-                <div id="two1">京东自营覆盖区县</div>
-                <div id="two2">京东已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</div>
-                <div id="two3">查看详情 ></div>
+            <div id="two ">
+                <div id="two1 ">京东自营覆盖区县</div>
+                <div id="two2 ">京东已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</div>
+                <div id="two3 ">查看详情 ></div>
             </div>
         </div>
     </div>
-    <div id="cont2">
-        <div id="last2">
-            <div id="last21">
+    <div id="cont2 ">
+        <div id="last2 ">
+            <div id="last21 ">
                 <ul>
-                    <li class="style1">关于我们</li>
-                    <li class="style2">|</li>
-                    <li class="style1">联系我们</li>
-                    <li class="style2">|</li>
-                    <li class="style1">联系客服</li>
-                    <li class="style2">|</li>
-                    <li class="style1">商家入驻</li>
-                    <li class="style2">|</li>
-                    <li class="style1">营销中心</li>
-                    <li class="style2">|</li>
-                    <li class="style1">手机京东</li>
-                    <li class="style2">|</li>
-                    <li class="style1">友情链接</li>
-                    <li class="style2">|</li>
-                    <li class="style1">销售联盟</li>
-                    <li class="style2">|</li>
-                    <li class="style1">京东社区</li>
-                    <li class="style2">|</li>
-                    <li class="style1">风险监测</li>
-                    <li class="style2">|</li>
-                    <li class="style1">隐私政策</li>
-                    <li class="style2">|</li>
-                    <li class="style1">京东公益</li>
-                    <li class="style2">|</li>
-                    <li class="style1">English Site</li>
-                    <li class="style2">|</li>
-                    <li class="style1">Contact Us</li>
+                    <li class="style1 ">关于我们</li>
+                    <li class="style2 ">|</li>
+                    <li class="style1 ">联系我们</li>
+                    <li class="style2 ">|</li>
+                    <li class="style1 ">联系客服</li>
+                    <li class="style2 ">|</li>
+                    <li class="style1 ">商家入驻</li>
+                    <li class="style2 ">|</li>
+                    <li class="style1 ">营销中心</li>
+                    <li class="style2 ">|</li>
+                    <li class="style1 ">手机京东</li>
+                    <li class="style2 ">|</li>
+                    <li class="style1 ">友情链接</li>
+                    <li class="style2 ">|</li>
+                    <li class="style1 ">销售联盟</li>
+                    <li class="style2 ">|</li>
+                    <li class="style1 ">京东社区</li>
+                    <li class="style2 ">|</li>
+                    <li class="style1 ">风险监测</li>
+                    <li class="style2 ">|</li>
+                    <li class="style1 ">隐私政策</li>
+                    <li class="style2 ">|</li>
+                    <li class="style1 ">京东公益</li>
+                    <li class="style2 ">|</li>
+                    <li class="style1 ">English Site</li>
+                    <li class="style2 ">|</li>
+                    <li class="style1 ">Contact Us</li>
                 </ul>
             </div>
-            <div id="last22">
+            <div id="last22 ">
                 <ul>
-                    <li class="style3">京公网安备 11000002000088号</li>
-                    <li class="style4">|</li>
-                    <li class="style3">京ICP证070359号</li>
-                    <li class="style4">|</li>
-                    <li class="style3">互联网药品信息服务资格证编号(京)-经营性-2014-0008</li>
-                    <li class="style4">|</li>
-                    <li class="style3">新出发京零 字第大120007号</li>
+                    <li class="style3 ">京公网安备 11000002000088号</li>
+                    <li class="style4 ">|</li>
+                    <li class="style3 ">京ICP证070359号</li>
+                    <li class="style4 ">|</li>
+                    <li class="style3 ">互联网药品信息服务资格证编号(京)-经营性-2014-0008</li>
+                    <li class="style4 ">|</li>
+                    <li class="style3 ">新出发京零 字第大120007号</li>
                 </ul>
             </div>
-            <div id="last23">
+            <div id="last23 ">
                 <ul>
-                    <li class="style3">互联网出版许可证编号新出网证(京)字150号</li>
-                    <li class="style4">|</li>
-                    <li class="style3">出版物经营许可证</li>
-                    <li class="style4">|</li>
-                    <li class="style3">网络文化经营许可证京网文[2014]2148-348号</li>
-                    <li class="style4">|</li>
-                    <li class="style3">违法和不良信息举报电话：4006561155</li>
+                    <li class="style3 ">互联网出版许可证编号新出网证(京)字150号</li>
+                    <li class="style4 ">|</li>
+                    <li class="style3 ">出版物经营许可证</li>
+                    <li class="style4 ">|</li>
+                    <li class="style3 ">网络文化经营许可证京网文[2014]2148-348号</li>
+                    <li class="style4 ">|</li>
+                    <li class="style3 ">违法和不良信息举报电话：4006561155</li>
                 </ul>
             </div>
-            <div id="last24">
+            <div id="last24 ">
                 <ul>
-                    <li class="style3">Copyright ? 2004 - 2017 京东JD.com 版权所有</li>
-                    <li class="style4">|</li>
-                    <li class="style3">消费者维权热线：4006067733经营证照</li>
+                    <li class="style3 ">Copyright ? 2004 - 2017 京东JD.com 版权所有</li>
+                    <li class="style4 ">|</li>
+                    <li class="style3 ">消费者维权热线：4006067733经营证照</li>
                 </ul>
             </div>
-            <div id="last25">
+            <div id="last25 ">
                 <ul>
-                    <li class="style3">京东旗下网站：京东钱包</li>
-                    <li class="style4">|</li>
-                    <li class="style3">京东云</li>
+                    <li class="style3 ">京东旗下网站：京东钱包</li>
+                    <li class="style4 ">|</li>
+                    <li class="style3 ">京东云</li>
                 </ul>
             </div>
-            <div id="lastImg"><img src="../images/img-index/dd.jpg" /></div>
+            <div id="lastImg "><img src="../images/img-index/dd.jpg " /></div>
         </div>
     </div>
 </body>
+<script src="../js/axios/axios.min.js "></script>
+<script src="../js/js-shangpin.js "></script>
+<script src="../js/jquery-2.2.4.js "></script>
+<script src="../js/layer/layer.js "></script>
+<script src="../js/iflogin.js "></script>
 
-<script src="../js/js-shangpin.js"></script>
+</html>
 
 </html>

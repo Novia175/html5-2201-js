@@ -33,7 +33,7 @@ class Seckill {
                 this.timeEnd.innerHTML = d3 + ':00';
             }
         }
-        Second = 60 - Second;
+        Second = 59 - Second;
         minute = 59 - minute;
         hour = d3 - hour - 1;
         h += parseInt(hour / 10);
@@ -158,43 +158,3 @@ input.onblur = function() {
 input.onfocus = function() {
     ul.style.display = 'block';
 }
-
-//登录成功
-class loggedIn {
-    constructor() {
-        this.nickname = this.getQueryVariable("nickname");
-        this.sncTxtOne1 = document.querySelector('#sncTxtOne1');
-        this.sncTxtOne2 = document.querySelector('#sncTxtOne2');
-        this.user_show1 = document.querySelector('.user_show1');
-        this.user_show2 = document.querySelector('.user_show2');
-        this.loggedInFn();
-    }
-    getQueryVariable(variable) {
-        var query = decodeURI(window.location.search.substring(1));
-        var vars = query.split("&");
-        for (var i = 0; i < vars.length; i++) {
-            var pair = vars[i].split("=");
-            if (pair[0] == variable) {
-                return pair[1];
-            }
-        }
-        return (false);
-    }
-    loggedInFn() {
-        if (this.nickname == false) {
-            this.sncTxtOne1.style.display = 'block';
-            this.sncTxtOne2.style.display = 'none';
-            this.user_show1.style.display = 'block';
-            this.user_show2.style.display = 'none';
-        } else {
-            let user_name = document.querySelector('#user_name');
-            this.sncTxtOne1.style.display = 'none';
-            this.sncTxtOne2.style.display = 'block';
-            this.user_show1.style.display = 'none';
-            this.user_show2.style.display = 'block';
-            this.sncTxtOne2.innerHTML = this.nickname;
-            user_name.innerHTML = this.nickname;
-        }
-    }
-}
-new loggedIn;

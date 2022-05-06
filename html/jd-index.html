@@ -14,8 +14,15 @@
             <div id="subNavConLeft"><span class="iconfont icon-weizhi" style="color: #e1251b;margin-right: 3px;"></span>北京</div>
             <div id="subNavConRight">
                 <ul>
-                    <li id="sncTxtOne1">你好，请<a href="./jd-denglu.html" style="color: #666;">登录</a> <a href="#" id="sncTxt">免费注册</a></li>
-                    <li id="sncTxtOne2" style="display: none;">admin</li>
+                    <li class="login1">
+                        <div class="aaa">
+                            <a id="login" href="./jd-denglu.html?ReturnUrl=./jd-index.html" style="color: #999;">你好，请登录</a></div>
+                        <div class=" aaa" style="color: #EF3E15;">免费注册</div>
+                    </li>
+                    <li class="login2" style="display: none;">
+                        <div class="aaa" style="color: #999999">你好,<a href="#none" class="uname" style="color: #999999">admin</a></div>
+                        <div class="aaa"><a href="../html/jd-denglu.html?ReturnUrl=./jd-index.html" class="tuichu" style="color: #999999">退出</a></div>
+                    </li>
                     <li class="sncTxtImg"><img src="../images/img-index/sep.jpg" /></li>
                     <li class="sncTxtfTxt">我的订单</li>
                     <li class="sncTxtImg"><img src="../images/img-index/sep.jpg" /></li>
@@ -60,9 +67,10 @@
                 <a>12期免息</a>
             </div>
             <div id="logoCarCon">
-                <span id="logoCarConCount">0</span>
+                <span id="logoCarConCount" class="catNum">0</span>
                 <div id="logoCarConImg"><span class="iconfont icon-3"></span></div>
-                <div id="logoCarConTxt">我的购物车</div>
+                <div id="logoCarConTxt">
+                    <a href="./jd-gouwuche.html" style="color: #666;">我的购物车</a></div>
             </div>
         </div>
         <div id="mainNavCenMid">
@@ -149,17 +157,17 @@
                         <div class="user_avatar">
                             <img src="../images/img-index/touxiang.png" width="100%" height="100%">
                         </div>
-                        <div class="user_show1">
+                        <div class="user_show1 login1">
                             <a class="user_tip" style="color: #666;">Hi~欢迎逛京东！</a>
                             <p>
                                 <a href="./jd-denglu.html" class="user_login" style="color: #333;">登录</a>&nbsp;|&nbsp;
                                 <a href="" class="user_reg" style="color: #333;">注册</a>
                             </p>
                         </div>
-                        <div class="user_show2" style="display: none;">
-                            <p style="color: #666;">Hi，<a id="user_name" style="color: #666;">admin</a></p>
+                        <div class="user_show2 login2" style="display: none;">
+                            <p style="color: #666;">Hi，<a class="uname" style="color: #666;">admin</a></p>
                             <p class="user_sl">
-                                <a href="./jd-index.html" class="user_logout" style="color: #666;">退出</a></p>
+                                <a href="../html/jd-denglu.html?ReturnUrl=./jd-index.html" class="tuichu" style="color: #666;">退出</a></p>
                         </div>
                     </div>
                 </div>
@@ -515,7 +523,9 @@
         </div>
     </div>
 </body>
-<!-- <script src="../js/pinyin.js"></script> -->
+<script src="../js/axios/axios.min.js"></script>
+<script src="../js/jquery-2.2.4.js"></script>
 <script src="../js/jd-index.js"></script>
+<script src="../js/iflogin.js"></script>
 
 </html>

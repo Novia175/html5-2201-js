@@ -18,11 +18,19 @@
             <ul class="nav_ul1">
                 <li><a href=""><i class="iconfont">&#xe6d3;</i></a></li>
                 <li><a href="">京东首页</a></li>
-                <li><a href="">配送到：宿州</a></li>
+                <li><a href="">配送到：北京</a></li>
             </ul>
 
             <ul class="nav_ul2">
-                <li><a href="">洋洋宝贝</a><span>|</span></li>
+                <li class="login1" style="float: left;">
+                    <div class="aaa">
+                        <a id="login" href="./jd-denglu.html?ReturnUrl=./jd-gouwuche.html" style="color: #666;">你好，请登录</a></div>
+                    <div class=" aaa" style="color: #EF3E15;">免费注册</div>
+                </li>
+                <li class="login2" style="display: none;float: left;">
+                    <div class="aaa" style="color: #999999">你好,<a href="#none" class="uname" style="color: #999999">admin</a></div>
+                    <div class="aaa"><a href="../html/jd-denglu.html?ReturnUrl=./jd-gouwuche.html" class="tuichu" style="color: #999999">退出</a></div>
+                </li>
                 <li><a href="">我的订单</a><span>|</span></li>
                 <li><a href="">我的京东</a><span>|</span></li>
                 <li><a href="">京东会员</a><span>|</span></li>
@@ -85,86 +93,40 @@
     <!--商品详情展示开始-->
     <div class="info warp">
 
-        <ul>
-            <li class="info_1"><input type="checkbox" /> </li>
-            <li class="info_2"> <img src="../images/img-gouwuche/img1.jpg" width="80px" /> </li>
-            <li class="info_3"><a>【京东超市】desha春秋季儿童休闲服</a></li>
-            <li class="info_4"><a>颜色：灰色+粉红</a> </li>
-            <li class="info_5">￥182.5</li>
-            <li class="info_6">
-                <button>-</button>
-                <input type="text" name="" id="" value="1" />
-                <button class="bot">+</button>
-
-            </li>
-            <li class="info_7">￥182.5</li>
-            <li>
-                <a>删除</a><br />
-                <a>已到我的关注</a>
-            </li>
-        </ul>
-
     </div>
-
-    <div class="info warp">
-
-        <ul>
-            <li class="info_1"><input type="checkbox" /> </li>
-            <li class="info_2"> <img src="../images/img-gouwuche/img2.jpg" width="80px" /> </li>
-            <li class="info_3"><a>【京东超市】desha春秋季儿童休闲服</a></li>
-            <li class="info_4"><a>颜色：灰色+粉红</a> </li>
-            <li class="info_5">￥182.5</li>
-            <li class="info_6">
-                <button>-</button>
-                <input type="text" name="" id="" value="1" />
-                <button class="bot">+</button>
-
-            </li>
-            <li class="info_7">￥182.5</li>
-            <li>
-                <a>删除</a><br />
-                <a>已到我的关注</a>
-            </li>
-        </ul>
-
-    </div>
-
-    <div class="info warp">
-
+    <!--
         <ul>
             <li class="info_1"><input type="checkbox" /> </li>
             <li class="info_2"> <img src="../images/img-gouwuche/img3.jpg" width="80px" /> </li>
             <li class="info_3"><a>【京东超市】desha春秋季儿童休闲服</a></li>
-            <li class="info_4"><a>颜色：灰色+粉红</a> </li>
             <li class="info_5">￥182.5</li>
             <li class="info_6">
                 <button>-</button>
                 <input type="text" name="" id="" value="1" />
                 <button class="bot">+</button>
-
             </li>
             <li class="info_7">￥182.5</li>
             <li>
-                <a>删除</a><br />
+                <a class="del">删除</a><br />
                 <a>已到我的关注</a>
             </li>
         </ul>
-
-    </div>
+   -->
     <!--商品详情展示结束-->
-
     <!--结算窗口开始-->
     <div class="balance warp">
         <ul class="balance_ul1">
             <li><input type="checkbox">全选</li>
-            <li>删除选中商品</li>
+            <li>
+                <a class="bothDel" href="#none" style="color:#000;">删除选中商品</a></li>
             <li>移到我的关注</li>
-            <li>清除下柜商品</li>
+            <li>
+                <a class="allDel" href="#none" style="color:#000;">清除全部商品</a></li>
         </ul>
 
         <ul class="balance_ul2">
-            <li>已经选择<span>1</span>件商品</li>
-            <li>总价<span>￥12</span></li>
+            <li class="num">已经选择<span style="padding: 0 2px;">0</span>件商品</li>
+            <li class="price">总价<span>￥0</span></li>
             <li class="butt">去结算</li>
         </ul>
     </div>
@@ -297,5 +259,11 @@
         </div>
     </div>
 </body>
+
+<script src="../js/axios/axios.min.js"></script>
+<script src="../js/jd-gouwuche.js"></script>
+<script src="../js/jquery-2.2.4.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script src="../js/iflogin.js"></script>
 
 </html>

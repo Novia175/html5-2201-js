@@ -91,4 +91,193 @@ class ChooseImg {
 }
 new ChooseImg;
 
-//加入购物车
+//商品
+class Commodities {
+    constructor() {
+        this.goodId = 5;
+        this.getgood();
+        this.bindEve();
+
+    }
+    bindEve() {
+        this.$('.shangPinJieShao_top').addEventListener('mouseover', this.overGoodFn.bind(this));
+        this.$('.shangPinJieShao_top div').forEach(good => {
+            good.addEventListener('click', this.clickGoodFn.bind(this));
+        });
+        this.$('.wrap-input').addEventListener('click', this.clickhandler.bind(this));
+        this.$('.btn-lg').addEventListener('click', this.addCart.bind(this));
+    }
+    overGoodFn(eve) {
+        if (eve.toElement.parentNode.className == 'shangPinJieShao_top') {
+            eve.path[1].querySelectorAll('div').forEach(div => {
+                div.classList.value = '';
+            })
+        }
+        if (eve.target.classList == '') {
+            eve.target.classList.value = 'changeOn';
+        }
+    }
+    clickGoodFn(eve) {
+        eve.target.classList.value = 'changeOn';
+    }
+    async getgood() {
+        axios.defaults.headers['content-type'] = 'application/x-www-form-urlencoded';
+        let { data, status } = await axios.get('http://localhost:8888/goods/item/' + this.goodId);
+        if (status == 200) {
+            if (data.code == 1) {
+                //商品详情
+                let goodIntroduce = this.$('.shangPinJieShao_main');
+                goodIntroduce.innerHTML = data.info.goods_introduce;
+                console.log(data.info.goods_introduce);
+                let html1 = `<div class="miaoshaInfo_left">京&ensp;东&ensp;价</div>
+                <div class="dd">
+                    <span class="miaoshaInfo_middle">
+                    <span style="font-size: 16px;">￥</span>
+                    <span style="font-size: 22px;">${data.info.current_price}</span>
+                    </span>
+                    <a id="jiangjia">降价通知</a>
+                    <div class="old-price">
+                    <span><strike>￥${data.info.price}</strike>
+                        原价</span>
+                    </div>
+                    <div class="miaoshaInfo_right clearfix">
+                        <p style="font-size: 13px;color: #999;">累计评价</p>
+                        <p id="leiji">3000+</p>
+                    </div>
+                </div>`
+                this.$('.miaoshaInfo1').innerHTML = html1;
+                let html2 = `<a><b>
+                ${data.info.title}</b></a>`;
+                this.$('.info_2_tittle').innerHTML = html2;
+                this.$('.imgGood').forEach(img => {
+                    img.src = data.info.img_big_logo;
+                })
+            }
+        }
+        // console.log(data);
+
+    }
+    addCart() { //加入购物车
+        setTimeout(() => {
+            let token = localStorage.getItem('token');
+            let userId = localStorage.getItem('user_id');
+            axios.defaults.headers['content-type'] = 'application/x-www-form-urlencoded';
+            axios.defaults.headers.common['authorization'] = token;
+            axios.get('http://localhost:8888/cart/list?id=' + userId).then(res => {
+                let { data, status } = res;
+                let numed;
+                console.log(data);
+                if (status == 200) {
+                    if (data.code == 401 || !token) { location.assign('../html/jd-denglu.html?ReturnUrl=./jd-shangpin.html'); }
+                    if (data.code == 1) {
+                        console.log(data.cart.length);
+                        let flag = false;
+                        for (var i = 0; i < data.cart.length; i++) {
+                            console.log(data.cart[i].goods_id);
+                            if (data.cart[i].goods_id == this.goodId) {
+                                flag = true;
+                                numed = data.cart[i].cart_number;
+                                break;
+                            }
+                        }
+                        if (flag == true) {
+                            let num = Number(this.$('.buy-num').value) + Number(numed);
+                            let data1 = `id=${userId}&goodsId=${this.goodId}&number=${num}`;
+                            axios.post('http://localhost:8888/cart/number', data1).then(res1 => {
+                                let {
+                                    data,
+                                    status
+                                } = res1;
+                                if (status == 200) {
+                                    console.log(data);
+                                    layer.open({
+                                        content: '加入购物成功',
+                                        btn: ['去购物车结算', '留在当前页面'],
+                                        yes: function(index, layero) {
+                                            location.assign('./jd-gouwuche.html')
+                                        },
+                                        btn2: function(index, layero) {
+                                            //return false 开启该代码可禁止点击该按钮关闭
+                                        }
+                                    })
+                                }
+                            });
+
+                        } else { //加入购物车后修改数量
+                            axios.defaults.headers.common['authorization'] = token;
+                            axios.defaults.headers['Content-Type'] = 'application/x-www-form-urlencoded'; //默json格式,server处理不了
+                            let param = `id=${userId}&goodsId=${this.goodId}`;
+                            console.log(param);
+                            axios.post('http://localhost:8888/cart/add', param).then(res2 => {
+                                let {
+                                    data,
+                                    status
+                                } = res2;
+                                if (status == 200) {
+                                    if (data.code == 1) {
+                                        let num = Number(this.$('.buy-num').value);
+                                        console.log(Number(this.$('.buy-num').value) + '数量');
+                                        let data1 = `id=${userId}&goodsId=${this.goodId}&number=${num}`;
+                                        console.log(data1);
+                                        axios.post('http://localhost:8888/cart/number', data1).then(res3 => {
+                                            let {
+                                                data,
+                                                status
+                                            } = res3;
+                                            if (status == 200) {
+                                                if (data.code == 1) {
+                                                    console.log(data);
+                                                    layer.open({
+                                                        content: '加入购物成功',
+                                                        btn: ['去购物车结算', '留在当前页面'],
+                                                        yes: function(index, layero) {
+                                                            location.assign('./jd-gouwuche.html')
+                                                        },
+                                                        btn2: function(index, layero) {
+                                                            //return false 开启该代码可禁止点击该按钮关闭
+                                                        }
+                                                    })
+                                                }
+
+                                            }
+                                        });
+                                    }
+                                }
+                            });
+
+                        }
+
+                    }
+                }
+            });
+        }, 500);
+    }
+    clickhandler(eve) {
+        let { target } = eve;
+        let num = Number(eve.path[1].querySelector('input').value);
+        if (target.classList.value == "btn-add") {
+            num = this.setStep(num + 1);
+        }
+        if (target.classList.value == "btn-reduce") {
+            num = this.setStep(num - 1);
+        }
+
+        console.log(target.classList.value, num);
+        this.$('.buy-num').value = num;
+    }
+    setStep(value) {
+        if (value <= 1) {
+            return 1;
+        } else if (value >= 10) {
+            return 10;
+        } else {
+            return value;
+        }
+    }
+
+    $(tag) {
+        let res = document.querySelectorAll(tag);
+        return res.length == 1 ? res[0] : res;
+    }
+}
+new Commodities;

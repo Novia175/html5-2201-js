@@ -59,14 +59,19 @@
      text-decoration: none;
  }
  
- #sncTxtOne1 {
-     width: 170px;
+ .login1 {
      color: #999999;
+     margin-right: 10px;
  }
  
- #sncTxtOne2 {
+ .login2 {
      color: #666;
      margin-right: 30px;
+ }
+ 
+ .aaa {
+     float: left;
+     margin-right: 10px;
  }
  
  .sncTxtImg img {
