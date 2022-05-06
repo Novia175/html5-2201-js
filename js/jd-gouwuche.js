@@ -95,6 +95,7 @@ class Cart {
                 price = price + infoNum * infoPrice;
             }
         });
+        price = price.toFixed(2);
         let numObj = document.querySelector('.num span');
         let priceObj = document.querySelector('.price span');
 

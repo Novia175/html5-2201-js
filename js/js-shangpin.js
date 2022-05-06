@@ -119,6 +119,45 @@ class Commodities {
     }
     clickGoodFn(eve) {
         eve.target.classList.value = 'changeOn';
+        // console.log(eve.target.dataset.id);
+        let id = Number(eve.target.dataset.id);
+        if (id == 1) {
+            console.log(this.$('.intro1').style.display + '1');
+            this.$('.intro1').style.display = 'block';
+            this.$('.intro2').style.display = 'block';
+            this.$('.intro3').style.display = 'block';
+            this.$('.intro4').style.display = 'block';
+            this.$('.intro5').style.display = 'block';
+        } else
+        if (id == 2) {
+            console.log(this.$('.intro1').style.display + '2');
+            this.$('.intro1').style.display = 'none';
+            this.$('.intro2').style.display = '';
+            this.$('.intro3').style.display = 'block';
+            this.$('.intro4').style.display = 'block';
+            this.$('.intro5').style.display = 'block';
+        } else if (id == 3) {
+            console.log(this.$('.intro1').style.display + '3');
+            this.$('.intro1').style.display = 'none';
+            this.$('.intro2').style.display = 'none';
+            this.$('.intro3').style.display = 'block';
+            this.$('.intro4').style.display = 'block';
+            this.$('.intro5').style.display = 'block';
+        } else if (id == 4) {
+            console.log(this.$('.intro1').style.display + '4');
+            this.$('.intro1').style.display = 'none';
+            this.$('.intro2').style.display = 'none';
+            this.$('.intro3').style.display = 'none';
+            this.$('.intro4').style.display = 'block';
+            this.$('.intro5').style.display = 'block';
+        } else if (id == 5) {
+            console.log(this.$('.intro1').style.display + '5');
+            this.$('.intro1').style.display = 'none';
+            this.$('.intro2').style.display = 'none';
+            this.$('.intro3').style.display = 'none';
+            this.$('.intro4').style.display = 'none';
+            this.$('.intro5').style.display = 'block';
+        }
     }
     async getgood() {
         axios.defaults.headers['content-type'] = 'application/x-www-form-urlencoded';
@@ -128,7 +167,13 @@ class Commodities {
                 //商品详情
                 let goodIntroduce = this.$('.shangPinJieShao_main');
                 goodIntroduce.innerHTML = data.info.goods_introduce;
-                console.log(data.info.goods_introduce);
+                console.log(this.$('.lazyimg').children);
+                this.$('.lazyimg').children[0].classList.value = 'intro1';
+                this.$('.lazyimg').children[1].classList.value = 'intro2';
+                this.$('.lazyimg').children[2].classList.value = 'intro3';
+                this.$('.lazyimg').children[3].classList.value = 'intro4';
+                this.$('.lazyimg').children[4].classList.value = 'intro5';
+
                 let html1 = `<div class="miaoshaInfo_left">京&ensp;东&ensp;价</div>
                 <div class="dd">
                     <span class="miaoshaInfo_middle">
@@ -155,7 +200,6 @@ class Commodities {
             }
         }
         // console.log(data);
-
     }
     addCart() { //加入购物车
         setTimeout(() => {
